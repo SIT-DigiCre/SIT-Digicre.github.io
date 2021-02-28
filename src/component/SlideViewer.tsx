@@ -8,9 +8,6 @@ const SlideViewer: React.FC<Props> = (props) => {
   const handleSelect = (selectedIndex: number, e: any) => {
     setIndex(selectedIndex);
   }
-  const style = {
-    width: props.width
-  }
   const slideViewItemOnClick = () => {
     const targetCarouselItem = props.carouselItemList[index];
     if (targetCarouselItem.youtube !== "") {
@@ -18,27 +15,23 @@ const SlideViewer: React.FC<Props> = (props) => {
     }
   }
   const imageStyle: ImageStyle = {
-    objectFit: "cover",
-    width: props.width,
-    height: props.width / 2
+    objectFit: "cover"
   }
   type ImageStyle = {
     objectFit: "cover" | "fill" | "none" | "inherit" | "initial" | "-moz-initial" | "revert" | "unset" | "contain" | "scale-down" | undefined;
-    width: number;
-    height: number;
   }
   return (
     <div>
-      <Carousel activeIndex={index} onSelect={handleSelect} style={style}>
+      <Carousel activeIndex={index} onSelect={handleSelect}>
         {
           props.carouselItemList.map((carouselItem: CarouselItem) => (
             <Carousel.Item onClick={slideViewItemOnClick}>
-              <img
+              <ResponsiveEmbed aspectRatio="16by9"><img
                 className="d-block w-100"
                 src={"./image/" + carouselItem.image_name + ".png"}
                 alt="First slide"
                 style={imageStyle}
-              />
+              /></ResponsiveEmbed>
             </Carousel.Item>
           ))
         }
@@ -66,7 +59,6 @@ const SlideViewer: React.FC<Props> = (props) => {
   );
 }
 type Props = {
-  width: number;
   carouselItemList: CarouselItem[];
 };
 

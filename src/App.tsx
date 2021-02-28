@@ -21,13 +21,13 @@ const App: React.FC<Props> = (props) => {
       </Navbar>
       <Container>
         <Row className="justify-content-md-center">
-          <Col md='auto'>
-            <img src="./logo.png" alt="logo" width={975} />
+          <Col md={11}>
+            <img src="./logo.png" alt="logo" className="img-fluid"/>
           </Col>
         </Row>
         <Row className="justify-content-md-center">
-          <Col md='auto'>
-            <SlideViewer width={975} carouselItemList={require('./json/slideview.json')} />
+          <Col md={9}>
+            <SlideViewer carouselItemList={require('./json/slideview.json')} />
           </Col>
         </Row>
         <Row>
