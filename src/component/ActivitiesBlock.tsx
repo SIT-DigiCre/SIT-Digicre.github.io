@@ -17,7 +17,10 @@ const ActivitiesBlock: React.FC<Props> = (props) => {
       </ContentBlock>
     )
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ecab8b4ab538bc13ebb59d752993aab101a9fc7d
 type Props = {};
 
 export default ActivitiesBlock;

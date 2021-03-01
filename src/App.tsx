@@ -4,7 +4,10 @@ import './App.css'
 import SlideViewer from './component/SlideViewer';
 import ContentBlock from './component/ContentBlock';
 import ActivitiesBlock from './component/ActivitiesBlock';
+<<<<<<< HEAD
 import Footer from './component/Footer';
+=======
+>>>>>>> ecab8b4ab538bc13ebb59d752993aab101a9fc7d
 import ToyBox from './component/ToyBox';
 import { CarouselItem } from './common';
 import { Timeline } from 'react-twitter-widgets'
@@ -107,7 +110,12 @@ const App: React.FC<Props> = (props) => {
         </Row>
         <Row>
           <Col md={6} className="mt-5">
+<<<<<<< HEAD
             <ActivitiesBlock />
+=======
+            <ActivitiesBlock
+            />
+>>>>>>> ecab8b4ab538bc13ebb59d752993aab101a9fc7d
           </Col>
           <Col md={6} className="mt-5">
             <ContentBlock 
