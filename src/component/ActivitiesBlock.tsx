@@ -17,11 +17,6 @@ const ActivitiesBlock: React.FC<Props> = (props) => {
       </ContentBlock>
     )
 }
-
-interface IProp{
-  title: string;
-  text: string;
-}
-type Props = Partial<IProp>;
+type Props = {};
 
 export default ActivitiesBlock;

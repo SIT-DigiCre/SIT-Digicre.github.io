@@ -3,7 +3,7 @@ import { Nav, Navbar, Container, Col, Row, Button, OverlayTrigger, Popover } fro
 import './App.css'
 import SlideViewer from './component/SlideViewer';
 import ContentBlock from './component/ContentBlock';
-import ActivitiesBlock from './component/ContentBlock';
+import ActivitiesBlock from './component/ActivitiesBlock';
 import ToyBox from './component/ToyBox';
 import { CarouselItem } from './common';
 import { Timeline } from 'react-twitter-widgets'
@@ -107,7 +107,6 @@ const App: React.FC<Props> = (props) => {
         <Row>
           <Col md={6} className="mt-5">
             <ActivitiesBlock
-              title={"活動内容"}
             />
           </Col>
           <Col md={6} className="mt-5">
