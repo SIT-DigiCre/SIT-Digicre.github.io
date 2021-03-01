@@ -3,7 +3,8 @@ import { Nav, Navbar, Container, Col, Row, Button, OverlayTrigger, Popover } fro
 import './App.css'
 import SlideViewer from './component/SlideViewer';
 import ContentBlock from './component/ContentBlock';
-import ActivitiesBlock from './component/ContentBlock';
+import ActivitiesBlock from './component/ActivitiesBlock';
+import Footer from './component/Footer';
 import ToyBox from './component/ToyBox';
 import { CarouselItem } from './common';
 import { Timeline } from 'react-twitter-widgets'
@@ -106,9 +107,7 @@ const App: React.FC<Props> = (props) => {
         </Row>
         <Row>
           <Col md={6} className="mt-5">
-            <ActivitiesBlock
-              title={"活動内容"}
-            />
+            <ActivitiesBlock />
           </Col>
           <Col md={6} className="mt-5">
             <ContentBlock 
@@ -119,7 +118,19 @@ const App: React.FC<Props> = (props) => {
             </ContentBlock>
           </Col>
         </Row>
+        {/* ここから新入生向けサイトに飛ぶボタン */}
+        <Row>
+          <Col md={12} className="mt-5">
+            <Button href="https://digicre.net/welcome/" variant="success" size="lg" block>
+              入部希望者の方はこちらへ（新入生向けサイトへ飛びます）
+            </Button>{' '}  
+          </Col>
+        </Row>
+        <Row className="mt-5">
+          {/* for margin */}
+        </Row>
       </Container>
+      <Footer />
     </div>
   );
 }
