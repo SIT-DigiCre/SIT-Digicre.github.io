@@ -3,3 +3,7 @@ export type CarouselItem = {
   alt_text: string,
   youtube: string
 }
+export type NoticesItem = {
+  date: string,
+  text: string
+}
