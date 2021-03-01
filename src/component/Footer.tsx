@@ -12,7 +12,7 @@ const Footer: React.FC<Props> = (props) => {
         backgroundColor: "#C6C6C6"
     }
     const imageStyle: Style = {
-        paddingLeft: "50px"
+        paddingLeft: "30px"
     }
     const textStyle: Style = {
         paddingRight: "50px"
@@ -33,7 +33,7 @@ const Footer: React.FC<Props> = (props) => {
         <Navbar.Collapse className="justify-content-end" style={textStyle}>
             <Navbar.Text>
                 デジクリへのご質問・ご相談は以下の連絡先でお願いします。<br></br>
-                Twitter: @sitdigicre<br></br>
+                <a href="https://twitter.com/sitdigicre">Twitter: @sitdigicre<br></br></a>
                 メール: sitdigicrecircle@gmail.com
             </Navbar.Text>
         </Navbar.Collapse>

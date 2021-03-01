@@ -122,7 +122,7 @@ const App: React.FC<Props> = (props) => {
             <ContentBlock 
               title={"おもちゃ箱"}
             >
-              <h3>ランダムで面白いものが出てくるよ！</h3>
+              <h3>このサイトに来るたびにランダムで面白いものが出てくるよ！</h3>
               {/* htmlタグのテストです */}
             </ContentBlock>
           </Col>
