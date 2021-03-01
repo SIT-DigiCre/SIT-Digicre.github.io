@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, Navbar, Container, Col, Row } from 'react-bootstrap';
+import { Nav, Navbar, Container, Col, Row, Button, OverlayTrigger, Popover } from 'react-bootstrap';
 import './App.css'
 import SlideViewer from './component/SlideViewer';
 import ContentBlock from './component/ContentBlock';
@@ -7,23 +7,45 @@ import ToyBox from './component/ToyBox';
 import { CarouselItem } from './common';
 import { Timeline } from 'react-twitter-widgets'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCompass,faComments,faHandPeace } from '@fortawesome/free-solid-svg-icons'
+import { faCompass, faComments, faHandPeace } from '@fortawesome/free-solid-svg-icons'
 
 const App: React.FC<Props> = (props) => {
+  const navbarBtnOnClick = () => {
 
+  }
   return (
     <div>
-      <Navbar bg="primary" variant="dark">
+      <Navbar bg="primary" variant="dark" expand="md" collapseOnSelect>
         <Navbar.Brand href="#home"><img src='./logo.png' alt='logo' height={70} /></Navbar.Brand>
-        <Nav className="mr-auto">
-          <Nav.Link href="https://core.digicre.net/blog/">デジコアブログ</Nav.Link>
-          <Nav.Link href="https://digicre.net/welcome">新入生向けサイト</Nav.Link>
-        </Nav>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="https://core.digicre.net/blog/">デジコアブログ</Nav.Link>
+            <Nav.Link href="https://digicre.net/welcome">新入生向けサイト</Nav.Link>
+          </Nav>
+          <Nav>
+            <OverlayTrigger
+              trigger="click"
+              key="bottom"
+              placement="bottom"
+              overlay={
+                <Popover id={`popover-positioned-bottom`}>
+                  <Popover.Content>
+                    <a href="https://digicre-sit.slack.com" style={{fontSize:20}}><img src="./image/Slack_Mark_Web.png" style={{height:20}}/> Slack</a><br/>
+                    <a href="https://core.digicre.net" style={{fontSize:20}}><img src="./image/digicore.png" style={{height:20}}/> デジコア</a>
+                  </Popover.Content>
+                </Popover>
+              }
+            >
+              <Button variant="secondary">部員向けリンク</Button>
+            </OverlayTrigger>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
       <Container>
         <Row className="justify-content-md-center">
           <Col md={11}>
-            <img src="./logo.png" alt="logo" className="img-fluid"/>
+            <img src="./logo.png" alt="logo" className="img-fluid" />
           </Col>
         </Row>
         <Row className="justify-content-md-center">
@@ -39,10 +61,10 @@ const App: React.FC<Props> = (props) => {
             />
           </Col>
           <Col md={6} className="mt-5">
-            <ContentBlock 
-              title="活動理念" 
+            <ContentBlock
+              title="活動理念"
             >
-              <ul style={{listStyle:'none'}}>
+              <ul style={{ listStyle: 'none' }}>
                 <li>
                   <FontAwesomeIcon icon={faCompass} /> より良い作品を作れるように日々努力し
                 </li>
@@ -67,7 +89,7 @@ const App: React.FC<Props> = (props) => {
                 options={{
                   height: '500'
                 }}
-                />
+              />
             </ContentBlock>
           </Col>
           <Col md={6} className="mt-5">
