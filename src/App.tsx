@@ -4,10 +4,7 @@ import './App.css'
 import SlideViewer from './component/SlideViewer';
 import ContentBlock from './component/ContentBlock';
 import ActivitiesBlock from './component/ActivitiesBlock';
-<<<<<<< HEAD
 import Footer from './component/Footer';
-=======
->>>>>>> ecab8b4ab538bc13ebb59d752993aab101a9fc7d
 import ToyBox from './component/ToyBox';
 import { CarouselItem } from './common';
 import { Timeline } from 'react-twitter-widgets'
@@ -15,9 +12,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCompass, faComments, faHandPeace } from '@fortawesome/free-solid-svg-icons'
 
 const App: React.FC<Props> = (props) => {
+  const buttonStyle: Style = {
+    padding: "25px 0px"
+  }
+
   const navbarBtnOnClick = () => {
 
   }
+  type Style = {
+    [key: string]: string
+  }
+  
   return (
     <div>
       <Navbar bg="primary" variant="dark" expand="md" collapseOnSelect>
@@ -110,12 +115,8 @@ const App: React.FC<Props> = (props) => {
         </Row>
         <Row>
           <Col md={6} className="mt-5">
-<<<<<<< HEAD
-            <ActivitiesBlock />
-=======
             <ActivitiesBlock
             />
->>>>>>> ecab8b4ab538bc13ebb59d752993aab101a9fc7d
           </Col>
           <Col md={6} className="mt-5">
             <ContentBlock 
@@ -127,9 +128,9 @@ const App: React.FC<Props> = (props) => {
           </Col>
         </Row>
         {/* ここから新入生向けサイトに飛ぶボタン */}
-        <Row>
-          <Col md={12} className="mt-5">
-            <Button href="https://digicre.net/welcome/" variant="success" size="lg" block>
+        <Row className="justify-content-center">
+          <Col md={6} className="mt-5">
+            <Button href="https://digicre.net/welcome/" variant="success" size="lg" style={buttonStyle} block>
               入部希望者の方はこちらへ（新入生向けサイトへ飛びます）
             </Button>{' '}  
           </Col>
