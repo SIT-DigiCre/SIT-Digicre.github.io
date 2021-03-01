@@ -3,6 +3,7 @@ import { Nav, Navbar, Container, Col, Row } from 'react-bootstrap';
 import './App.css'
 import SlideViewer from './component/SlideViewer';
 import ContentBlock from './component/ContentBlock';
+import ToyBox from './component/ToyBox';
 import { CarouselItem } from './common';
 import { Timeline } from 'react-twitter-widgets'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -74,7 +75,9 @@ const App: React.FC<Props> = (props) => {
               title={"お知らせ"} 
             >
               <h1>やばいわよ！</h1>
+              <p>3/1/2021 - デジクリ新HP爆誕だよ！</p>
               {/* ここにお知らせコンポーネントを入れるのだろうか */}
+              {/* 日付 - やったこと という形式でやりたいね*/}
             </ContentBlock>
           </Col>
         </Row>
@@ -82,16 +85,24 @@ const App: React.FC<Props> = (props) => {
           <Col md={6} className="mt-5">
             <ContentBlock 
               title={"活動内容"} 
-              text={"毎週月曜日に定例会を開催して集まっています。ここでは作品の進捗を話したり、好きなものを布教する講座やLT（Lightning Talks : 短いプレゼンテーション）を行ったりしています。学校で活動できない期間はclusterというSNSを使い、バーチャル空間で集まっていました。\n\n普段は、一緒にわいわいゲームをしたり、お題に沿って制作したものをそれぞれ評価して技術を高めたりしています。\n\n企画作成・発表\n\n前期と後期の２回行っています。企画発表でやりたいことを発信して、メンバーを募集します。そして協力して制作し、中間発表を経て、最終発表で成果を披露します。個人で制作した方も発表することができます。\n\n合宿\n\n８月に夏合宿、2月に冬合宿を行います。合宿中には様々な講座が行われ、技術を向上させたり、交流を深めたりすることができます。2020年度はオンラインで集まるエア合宿を開催しました。"} 
-            />
-            {/*このクソ長コードに関しては本当に申し訳ないと思っている*/}
+            >
+              <p>毎週月曜日に定例会を開催して集まっています。ここでは作品の進捗を話したり、好きなものを布教する講座や<b>LT（Lightning Talks : 短いプレゼンテーション）</b>を行ったりしています。学校で活動できない期間はclusterというSNSを使い、バーチャル空間で集まっていました。</p>
+              <p>普段は、一緒にわいわいゲームをしたり、お題に沿って制作したものをそれぞれ評価して技術を高めたりしています。</p>
+              <br></br>
+              <h3>企画作成・発表</h3>
+              <p>前期と後期の２回行っています。企画発表でやりたいことを発信して、メンバーを募集します。そして協力して制作し、中間発表を経て、最終発表で成果を披露します。個人で制作した方も発表することができます。</p>
+              <br></br>
+              <h3>合宿</h3>
+              <p>８月に夏合宿、2月に冬合宿を行います。合宿中には様々な講座が行われ、技術を向上させたり、交流を深めたりすることができます。2020年度はオンラインで集まるエア合宿を開催しました。</p>
+            {/*HTMLを直書きするのはかなり品がないと私も思うが、可読性を犠牲にtextに以上の文を一行で書くという私の邪悪な代案よりかはマシだと思いたい*/}
+            {/*上記の文は別のスクリプトに書いてここ（app.tsx）の処理は一文で済ませたいですね。未来の自分がなんとかしてくれるでしょう。 */}
+            </ContentBlock>
           </Col>
           <Col md={6} className="mt-5">
             <ContentBlock 
               title={"おもちゃ箱"}
-              text={"やばいわよ！"}
             >
-              <h1>やばいわよ！</h1>
+              <h3>ランダムで面白いものが出てくるよ！</h3>
               {/* htmlタグのテストです */}
             </ContentBlock>
           </Col>
