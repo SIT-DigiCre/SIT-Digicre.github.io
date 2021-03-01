@@ -1,9 +1,7 @@
-import { isAbsolute } from 'path'
 import React from 'react'
-import { Container, Row, Col, Navbar, Collapse, NavbarBrand } from 'react-bootstrap'
-import ContentBlock from './ContentBlock'
+import { Navbar } from 'react-bootstrap'
 
-const Footer: React.FC<Props> = (props) => {
+const Footer: React.FC<Props> = () => {
     const footerStyle: Style = {
         height: "150px",
         backgroundColor: "#C6C6C6",
@@ -16,9 +14,6 @@ const Footer: React.FC<Props> = (props) => {
     }
     const textStyle: Style = {
         paddingRight: "50px"
-    }
-    const infoStyle: Style = {
-        textAlign: "right"
     }
     type Style = {
         [key: string]: string

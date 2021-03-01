@@ -5,6 +5,7 @@ import SlideViewer from './component/SlideViewer';
 import ContentBlock from './component/ContentBlock';
 import ActivitiesBlock from './component/ActivitiesBlock';
 import Footer from './component/Footer';
+import NoticeList from './component/NoticeList'
 import ToyBox from './component/ToyBox';
 import { CarouselItem } from './common';
 import { Timeline } from 'react-twitter-widgets'
@@ -106,10 +107,7 @@ const App: React.FC<Props> = (props) => {
             <ContentBlock 
               title={"お知らせ"} 
             >
-              <h1>やばいわよ！</h1>
-              <p>3/1/2021 - デジクリ新HP爆誕だよ！</p>
-              {/* ここにお知らせコンポーネントを入れるのだろうか */}
-              {/* 日付 - やったこと という形式でやりたいね*/}
+              <NoticeList noticesItemList={require('./json/notices.json')} />
             </ContentBlock>
           </Col>
         </Row>
