@@ -3,15 +3,26 @@ import { Nav, Navbar, Container, Col, Row, Button, OverlayTrigger, Popover } fro
 import './App.css'
 import SlideViewer from './component/SlideViewer';
 import ContentBlock from './component/ContentBlock';
+import ActivitiesBlock from './component/ActivitiesBlock';
+import Footer from './component/Footer';
+import ToyBox from './component/ToyBox';
 import { CarouselItem } from './common';
 import { Timeline } from 'react-twitter-widgets'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCompass, faComments, faHandPeace } from '@fortawesome/free-solid-svg-icons'
 
 const App: React.FC<Props> = (props) => {
+  const buttonStyle: Style = {
+    padding: "25px 0px"
+  }
+
   const navbarBtnOnClick = () => {
 
   }
+  type Style = {
+    [key: string]: string
+  }
+  
   return (
     <div>
       <Navbar bg="primary" variant="dark" expand="md" collapseOnSelect>
@@ -54,9 +65,9 @@ const App: React.FC<Props> = (props) => {
         </Row>
         <Row>
           <Col md={6} className="mt-5">
-            <ContentBlock
-              title="デジクリとは"
-              text={"デジクリは、芝浦工業大学に所属するデジタルクリエーションサークルです。ゲーム制作をはじめ、アプリケーション開発などのプログラミング、イラスト制作、3Dモデリング、音楽制作、動画制作、Vtuber活動など、デジタルコンテンツの創作活動を行っています。\nPG班、イラスト班、3DCG班、DTM班、Movie班、XR班の６つがあり、それぞれが協力して作品をつくります。1人で複数の班に所属している人も多くいます。\n基本的に、企画を立てる→制作する→発表するという流れで活動しています。"}
+            <ContentBlock 
+              title="デジクリとは" 
+              text={"デジクリは、芝浦工業大学に所属するデジタルクリエーションサークルです。ゲーム制作をはじめ、アプリケーション開発などのプログラミング、イラスト制作、3Dモデリング、音楽制作、動画制作、Vtuber活動など、デジタルコンテンツの創作活動を行っています。\n\nPG班、イラスト班、3DCG班、DTM班、Movie班、XR班の６つがあり、それぞれが協力して作品をつくります。1人で複数の班に所属している人も多くいます。\n\n基本的に、企画を立てる→制作する→発表するという流れで活動しています。"}
             />
           </Col>
           <Col md={6} className="mt-5">
@@ -92,28 +103,43 @@ const App: React.FC<Props> = (props) => {
             </ContentBlock>
           </Col>
           <Col md={6} className="mt-5">
-            <ContentBlock
-              title={"お知らせ"}
-              text={"Websiteが新しくなった！"}
-            />
+            <ContentBlock 
+              title={"お知らせ"} 
+            >
+              <h1>やばいわよ！</h1>
+              <p>3/1/2021 - デジクリ新HP爆誕だよ！</p>
+              {/* ここにお知らせコンポーネントを入れるのだろうか */}
+              {/* 日付 - やったこと という形式でやりたいね*/}
+            </ContentBlock>
           </Col>
         </Row>
         <Row>
           <Col md={6} className="mt-5">
-            <ContentBlock
-              title={"活動内容"}
-              text={"毎週月曜日に定例会を開催して集まっています。ここでは作品の進捗を話したり、好きなものを布教する講座やLT（Lightning Talks : 短いプレゼンテーション）を行ったりしています。学校で活動できない期間はclusterというSNSを使い、バーチャル空間で集まっていました。\n普段は、一緒にわいわいゲームをしたり、お題に沿って制作したものをそれぞれ評価して技術を高めたりしています。"}
+            <ActivitiesBlock
             />
-            (↑明日企画制作・発表と合宿についての説明も書き足す)
           </Col>
           <Col md={6} className="mt-5">
-            <ContentBlock
+            <ContentBlock 
               title={"おもちゃ箱"}
-              text={"デジクるしかねぇ！"}
-            />
+            >
+              <h3>このサイトに来るたびにランダムで面白いものが出てくるよ！</h3>
+              {/* htmlタグのテストです */}
+            </ContentBlock>
           </Col>
         </Row>
+        {/* ここから新入生向けサイトに飛ぶボタン */}
+        <Row className="justify-content-center">
+          <Col md={6} className="mt-5">
+            <Button href="https://digicre.net/welcome/" variant="success" size="lg" style={buttonStyle} block>
+              入部希望者の方はこちらへ（新入生向けサイトへ飛びます）
+            </Button>{' '}  
+          </Col>
+        </Row>
+        <Row className="mt-5">
+          {/* for margin */}
+        </Row>
       </Container>
+      <Footer />
     </div>
   );
 }

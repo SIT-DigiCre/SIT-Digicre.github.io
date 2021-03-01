@@ -25,6 +25,7 @@ const ContentBlock: React.FC<Props> = (props) => {
     </div>
   );
 }
+
 interface IProp{
   title: string;
   text: string;
