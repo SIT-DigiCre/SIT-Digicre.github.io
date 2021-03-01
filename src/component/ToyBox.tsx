@@ -1,6 +1,4 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
-import ContentBlock from './ContentBlock';
 
 const ToyBox: React.FC<Props> = (props) => {
   return (
