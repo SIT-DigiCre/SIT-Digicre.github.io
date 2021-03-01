@@ -123,10 +123,7 @@ PG班、イラスト班、3DCG班、DTM班、Movie班、XR班の６つがあり�
             <ActivitiesBlock />
           </Col>
           <Col md={6} className="mt-5">
-            <ContentBlock title={"おもちゃ箱"}>
-              <h3>ランダムで面白いものが出てくるよ！</h3>
-              {/* htmlタグのテストです */}
-            </ContentBlock>
+            <ToyBox />
           </Col>
         </Row>
         {/* ここから新入生向けサイトに飛ぶボタン */}
