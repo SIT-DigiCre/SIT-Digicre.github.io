@@ -6,11 +6,21 @@ const NoticeList: React.FC<Props> = (props) => {
   const style = {};
 
   return (
-    <ListGroup className="overflow-auto" style={{ height: 450 }}>
+    <ListGroup className="overflow-auto notices" style={{ height: 450 }}>
       {props.noticesItemList.map((noticesItem: NoticesItem) => (
-        <ListGroup.Item>{noticesItem.date + " - " + noticesItem.text}</ListGroup.Item>
-      ))}
-    </ListGroup>
+        noticesItem.url !== undefined ?
+          (
+            <a href={noticesItem.url}>
+              <ListGroup.Item >{noticesItem.date + " - " + noticesItem.text}</ListGroup.Item>
+            </a>
+          )
+          :
+          (
+            <ListGroup.Item >{noticesItem.date + " - " + noticesItem.text}</ListGroup.Item>
+          )
+      ))
+      }
+    </ListGroup >
   );
 };
 type Props = {

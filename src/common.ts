@@ -5,5 +5,6 @@ export type CarouselItem = {
 }
 export type NoticesItem = {
   date: string,
-  text: string
+  text: string,
+  url?: string
 }

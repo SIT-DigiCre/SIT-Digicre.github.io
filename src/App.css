@@ -1,2 +1,11 @@
 .App {
 }
+
+.notices a{
+    text-decoration: none;
+    color:black;
+}
+
+.notices a:hover{
+    text-decoration: underline;
+}
