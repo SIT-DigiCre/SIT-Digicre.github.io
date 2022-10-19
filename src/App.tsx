@@ -32,7 +32,7 @@ const App: React.FC<Props> = (props) => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="https://core.digicre.net/blog/">デジコアブログ</Nav.Link>
+            <Nav.Link href="https://blog.digicre.net/">デジコアブログ</Nav.Link>
             <Nav.Link href="https://digicre.net/welcome">新入生向けサイト</Nav.Link>
           </Nav>
           <Nav>
@@ -43,12 +43,8 @@ const App: React.FC<Props> = (props) => {
               overlay={
                 <Popover id={`popover-positioned-bottom`}>
                   <Popover.Content>
-                    <a href="https://digicre-sit.slack.com" style={{ fontSize: 20 }}>
-                      <img src="./image/Slack_Mark_Web.png" style={{ height: 20 }} /> Slack
-                    </a>
-                    <br />
-                    <a href="https://core.digicre.net" style={{ fontSize: 20 }}>
-                      <img src="./image/digicore.png" style={{ height: 20 }} /> デジコア
+                    <a href="https://core3.digicre.net" style={{ fontSize: 20 }}>
+                      <img src="./image/digicore.png" alt={"digicore"} style={{ height: 20 }} /> デジコア
                     </a>
                   </Popover.Content>
                 </Popover>
