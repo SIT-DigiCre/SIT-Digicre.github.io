@@ -31,7 +31,7 @@ const Footer: React.FC<Props> = () => {
                   デジクリへのご質問・ご相談は以下の連絡先でお願いします。<br></br>
                   <FontAwesomeIcon icon={faTwitterSquare} /> <a href="https://twitter.com/sitdigicre">@sitdigicre</a>
                   <br></br>
-                  <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:sitdigicrecircle@gmail.com">sitdigicrecircle@gmail.com</a>
+                  <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:contact@digicre.net">contact@digicre.net</a>
                 </Navbar.Text>
               </Navbar.Collapse>
             </Col>
