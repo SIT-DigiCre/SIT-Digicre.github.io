@@ -34,8 +34,8 @@ const App: React.FC<Props> = (props) => {
           <Nav className="mr-auto">
             <Nav.Link href="https://blog.digicre.net/">デジコアブログ</Nav.Link>
             <Nav.Link href="https://digicre.net/welcome">新入生向けサイト</Nav.Link>
-            <Nav.Link href="https://twitter.com/sitdigicre">Twitter</Nav.Link>
-            <Nav.Link href="https://www.youtube.com/@sitdigicre">YouTube</Nav.Link>
+            <Nav.Link href="https://twitter.com/sitdigicre" target="_blank" rel="noopener noreferrer">Twitter</Nav.Link>
+            <Nav.Link href="https://www.youtube.com/@sitdigicre" target="_blank" rel="noopener noreferrer">YouTube</Nav.Link>
           </Nav>
           <Nav>
             <OverlayTrigger

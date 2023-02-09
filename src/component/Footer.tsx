@@ -29,7 +29,7 @@ const Footer: React.FC<Props> = () => {
               <Navbar.Collapse className="justify-content-end">
                 <Navbar.Text>
                   デジクリへのご質問・ご相談は以下の連絡先でお願いします。<br></br>
-                  <FontAwesomeIcon icon={faTwitterSquare} /> <a href="https://twitter.com/sitdigicre">@sitdigicre</a>
+                  <FontAwesomeIcon icon={faTwitterSquare} /> <a href="https://twitter.com/sitdigicre" target="_blank" rel="noopener noreferrer">@sitdigicre</a>
                   <br></br>
                   <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:contact@digicre.net">contact@digicre.net</a>
                 </Navbar.Text>

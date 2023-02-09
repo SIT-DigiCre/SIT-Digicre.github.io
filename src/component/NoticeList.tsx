@@ -10,7 +10,7 @@ const NoticeList: React.FC<Props> = (props) => {
       {props.noticesItemList.map((noticesItem: NoticesItem) => (
         noticesItem.url !== undefined ?
           (
-            <a href={noticesItem.url} style={{ color: "SteelBlue"}}>
+            <a href={noticesItem.url} target="_blank" rel="noopener noreferrer" style={{ color: "SteelBlue"}}>
               <ListGroup.Item >{noticesItem.date + " - " + noticesItem.text}</ListGroup.Item>
             </a>
           )
