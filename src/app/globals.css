@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto flex max-w-[1280px] flex-col gap-y-[64px] px-[16px] py-[64px] md:gap-y-[128px] md:px-[64px] md:py-[128px] xl:gap-y-[128px] xl:px-[128px] xl:py-[128px];
+  }
+
+  .hStack {
+    @apply flex items-center gap-x-[16px];
+  }
+
+  .logo {
+    @apply h-[48px] w-[176px] text-white md:h-[96px] md:w-[352px];
+  }
+
+  .card {
+    @apply w-full rounded-[16px] border-2 border-solid border-gray bg-white;
+  }
+  .card h2 {
+    @apply mb-[24px] text-center text-2xl/[1.5] font-bold tracking-[0.125em] text-[#0C5AE9];
+  }
+  .card h3 {
+    @apply mb-[24px] mt-[40px] text-xl/[1.5] font-bold text-[#0C5AE9];
+  }
+  .card p {
+    @apply mb-[16px] text-base/[1.75] last:mb-0;
+  }
+  .card ol {
+    @apply ml-[2rem] list-decimal;
+  }
+  .card li {
+    @apply text-base/[1.75];
+  }
+
+  .button {
+    @apply w-full rounded-[9999px] border-2 border-solid border-gray bg-white px-[32px] py-[16px];
+  }
+
+  .linkBox {
+    @apply relative overflow-hidden;
+  }
+
+  .linkOverlay {
+    @apply before:absolute before:inset-0 before:h-full before:w-full before:content-[""];
+  }
+}
