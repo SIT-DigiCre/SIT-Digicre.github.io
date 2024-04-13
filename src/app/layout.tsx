@@ -70,6 +70,7 @@ const menuList = [
 ];
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://digicre.net/"),
   title: "芝浦工業大学 デジクリ",
   description: "芝浦工業大学の公認サークル『デジクリ』の Web サイトです。",
   icons: {
@@ -78,6 +79,14 @@ export const metadata: Metadata = {
       { url: "/favicon.svg", type: "image/svg+xml" },
     ],
     apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://digicre.net/",
+    title: "芝浦工業大学 デジクリ",
+    siteName: "芝浦工業大学 デジクリ",
+    description: "芝浦工業大学の公認サークル『デジクリ』の Web サイトです。",
+    images: "/ogp.png",
   },
 };
 
