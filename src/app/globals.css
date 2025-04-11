@@ -36,7 +36,7 @@
   }
 
   .card {
-    @apply w-full rounded-[16px] border-2 border-solid border-gray-500 bg-white;
+    @apply w-full rounded-[16px] border-2 border-solid border-gray bg-white;
   }
   .card h2 {
     @apply mb-[24px] text-center text-2xl/[1.5] font-bold tracking-[0.125em] text-[#0C5AE9];
@@ -55,7 +55,7 @@
   }
 
   .button {
-    @apply w-full rounded-[9999px] border-2 border-solid border-gray-500 bg-white px-[32px] py-[16px];
+    @apply w-full rounded-[9999px] border-2 border-solid border-gray bg-white px-[32px] py-[16px];
   }
 
   .linkBox {
