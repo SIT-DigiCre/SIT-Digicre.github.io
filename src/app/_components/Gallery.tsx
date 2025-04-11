@@ -28,7 +28,7 @@ export default function Gallery() {
         extensions={{ Video }}
       >
         {slideList.map((item) => (
-          <SplideSlide>
+          <SplideSlide key={item}>
             <img
               src={item}
               alt=""
