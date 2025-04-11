@@ -100,7 +100,7 @@ export default function RootLayout({
       <body className={`${notoSansJp.variable} ${inter.variable}`}>
         {children}
 
-        <footer className="bg-blue-500">
+        <footer className="bg-blue">
           <div className="container">
             <nav className="flex flex-col items-center gap-y-[32px] md:gap-y-[64px]">
               <DigicreLogo className="logo" />

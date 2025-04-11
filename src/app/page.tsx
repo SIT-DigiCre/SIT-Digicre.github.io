@@ -50,7 +50,7 @@ const menu = [
 
 export default function Home() {
   return (
-    <main className="bg-sky-500">
+    <main className="bg-sky">
       <div className="container">
         <section className="flex flex-col items-center gap-y-[32px] md:gap-y-[64px]">
           <DigicreLogo className="logo" />

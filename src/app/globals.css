@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+  --color-black: #202020;
+  --color-blue: #0c5ae9;
+  --color-gray: #84929e;
+  --color-sky: #00b0f0;
+  --color-white: #ffffff;
+}
+
 @layer base {
   body {
     @apply font-sans;
