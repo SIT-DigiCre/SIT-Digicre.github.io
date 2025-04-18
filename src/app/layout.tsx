@@ -105,7 +105,7 @@ export default function RootLayout({
             <nav className="flex flex-col items-center gap-y-[32px] md:gap-y-[64px]">
               <DigicreLogo className="logo" />
 
-              <ul className="grid w-full grid-cols-1 gap-[2px] overflow-hidden rounded-2xl border-2 border-solid border-gray bg-gray md:grid-cols-2 xl:grid-cols-4">
+              <ul className="border-gray bg-gray grid w-full grid-cols-1 gap-[2px] overflow-hidden rounded-2xl border-2 border-solid md:grid-cols-2 xl:grid-cols-4">
                 {menuList.map((item) => (
                   <li
                     key={item.title}
@@ -127,7 +127,7 @@ export default function RootLayout({
             </nav>
 
             <p className="text-center text-white">
-              <small className="text-nowrap text-base">
+              <small className="text-base text-nowrap">
                 © {`2004-${new Date().getFullYear()}`} <wbr />
                 芝浦工業大学 デジクリ
               </small>
