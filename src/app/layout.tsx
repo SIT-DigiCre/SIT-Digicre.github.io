@@ -86,7 +86,19 @@ export const metadata: Metadata = {
     title: "芝浦工業大学 デジクリ",
     siteName: "芝浦工業大学 デジクリ",
     description: "芝浦工業大学の公認サークル『デジクリ』の Web サイトです。",
-    images: "/ogp.png",
+    images: [
+      {
+        url: "/ogp.png",
+        width: 1200,
+        height: 630,
+        alt: "デジクリ",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@sitdigicre",
+    creator: "@sitdigicre",
   },
 };
 
