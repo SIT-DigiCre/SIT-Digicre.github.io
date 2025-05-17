@@ -11,8 +11,8 @@ import {
   SimpleIconsYoutube,
 } from "@/components/Icon";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Noto_Sans_JP } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { Inter, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -86,7 +86,19 @@ export const metadata: Metadata = {
     title: "芝浦工業大学 デジクリ",
     siteName: "芝浦工業大学 デジクリ",
     description: "芝浦工業大学の公認サークル『デジクリ』の Web サイトです。",
-    images: "/ogp.png",
+    images: [
+      {
+        url: "/ogp.png",
+        width: 1200,
+        height: 630,
+        alt: "デジクリ",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@sitdigicre",
+    creator: "@sitdigicre",
   },
 };
 
@@ -97,6 +109,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <GoogleAnalytics gaId="G-5GLTJ9X6XX" />
       <body className={`${notoSansJp.variable} ${inter.variable}`}>
         {children}
 
