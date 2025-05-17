@@ -11,8 +11,8 @@ import {
   SimpleIconsYoutube,
 } from "@/components/Icon";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Noto_Sans_JP } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { Inter, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -97,6 +97,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <GoogleAnalytics gaId="G-5GLTJ9X6XX" />
       <body className={`${notoSansJp.variable} ${inter.variable}`}>
         {children}
 
