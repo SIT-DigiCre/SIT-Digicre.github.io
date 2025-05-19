@@ -2,14 +2,15 @@ import type { SVGProps } from "react";
 
 export function MaterialSymbolsOpenInNew(props: SVGProps<SVGSVGElement>) {
   return (
-    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="1em"
       height="1em"
       viewBox="0 0 24 24"
+      role="img"
       {...props}
     >
+      <title>新しいタブで開く</title>
       <path
         fill="currentColor"
         d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h7v2H5v14h14v-7h2v7q0 .825-.587 1.413T19 21zm4.7-5.3l-1.4-1.4L17.6 5H14V3h7v7h-2V6.4z"
@@ -162,34 +163,17 @@ export function SimpleIconsGithub(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function Digicre(props: SVGProps<SVGSVGElement>) {
-  return (
-    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 176 48"
-      width="1em"
-      height="1em"
-      {...props}
-    >
-      <path
-        d="M2 39h4v-1H0v8h6v-1H2v-6zm4 0h2v6H6zm4 1h2v6h-2zm0-2h2v1h-2zm14 2h2v6h-2zm0-2h2v1h-2zm-10 2v6h6v1h-4v1h6v-8h-8Zm6 5h-4v-4h4v4Zm14-4v-1h-3v-2h-2v2h-1v1h1v5h5v-1h-3v-4h3zm4-1v1h4v1h-6v4h8v-6h-6Zm4 5h-4v-2h4v2Zm6 0v-7h-2v8h4v-1h-2zm18-5v-2h-8v8h8v-3h-2v2h-4v-6h4v1h2zm8 0v6h8v-1h-6v-2h6v-3h-8Zm6 2h-4v-1h4v1Zm26-2v6h8v-6h-8Zm6 5h-4v-4h4v4Zm10-4h2v5h-2zm-4-1h-2v6h2v-5h4v-1h-4zm-16 0h2v6h-2zm0-2h2v1h-2zm-2 3v-1h-3v-2h-2v2h-1v1h1v5h5v-1h-3v-4h3zm-14-1v1h4v1h-6v4h8v-6h-6Zm4 5h-4v-2h4v2Zm-20-5h-2v6h2v-5h2v-1h-2zm82 0v6h8v-2h-2v1h-4v-4h4v1h2v-2h-8zm12 5v-7h-2v8h4v-1h-2zm-22-5h2v6h-2zm0-2h2v1h-2zm-2 2v-2h-8v8h8v-3h-2v2h-4v-6h4v1h2zm28 0v6h8v-1h-6v-2h6v-3h-8Zm6 2h-4v-1h4v1Zm-26-2h-2v6h2v-5h2v-1h-2zM29 14H4l3-6h25l-3 6zm-3 10h-6l-4 8H8l4-8H0l3-6h26l-3 6zm4-18h-4l2-6h4l-2 6zm-6 0h-4l2-6h4l-2 6zm38 8H52l3-6h10l-3 6zm-4 10H48l3-6h10l-3 6zm10 8h-8L72 8h8L68 32zM78 6h-4l2-6h4l-2 6zm-6 0h-4l2-6h4l-2 6zm44 26h-8l9-18h-8l-5 10h-8l8-16h24l-12 24zm48 0h-8l12-24h8l-12 24zm-10-8h-10l8-16h8l-5 10h2l-3 6z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
 export function DigicreLogo(props: SVGProps<SVGSVGElement>) {
   return (
-    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 176 48"
       width="1em"
       height="1em"
+      role="img"
       {...props}
     >
+      <title>デジクリ Digital Creation Circle</title>
       <path
         d="M2 39h4v-1H0v8h6v-1H2v-6zm4 0h2v6H6zm4 1h2v6h-2zm0-2h2v1h-2zm14 2h2v6h-2zm0-2h2v1h-2zm-10 2v6h6v1h-4v1h6v-8h-8Zm6 5h-4v-4h4v4Zm14-4v-1h-3v-2h-2v2h-1v1h1v5h5v-1h-3v-4h3zm4-1v1h4v1h-6v4h8v-6h-6Zm4 5h-4v-2h4v2Zm6 0v-7h-2v8h4v-1h-2zm18-5v-2h-8v8h8v-3h-2v2h-4v-6h4v1h2zm8 0v6h8v-1h-6v-2h6v-3h-8Zm6 2h-4v-1h4v1Zm26-2v6h8v-6h-8Zm6 5h-4v-4h4v4Zm10-4h2v5h-2zm-4-1h-2v6h2v-5h4v-1h-4zm-16 0h2v6h-2zm0-2h2v1h-2zm-2 3v-1h-3v-2h-2v2h-1v1h1v5h5v-1h-3v-4h3zm-14-1v1h4v1h-6v4h8v-6h-6Zm4 5h-4v-2h4v2Zm-20-5h-2v6h2v-5h2v-1h-2zm82 0v6h8v-2h-2v1h-4v-4h4v1h2v-2h-8zm12 5v-7h-2v8h4v-1h-2zm-22-5h2v6h-2zm0-2h2v1h-2zm-2 2v-2h-8v8h8v-3h-2v2h-4v-6h4v1h2zm28 0v6h8v-1h-6v-2h6v-3h-8Zm6 2h-4v-1h4v1Zm-26-2h-2v6h2v-5h2v-1h-2zM29 14H4l3-6h25l-3 6zm-3 10h-6l-4 8H8l4-8H0l3-6h26l-3 6zm4-18h-4l2-6h4l-2 6zm-6 0h-4l2-6h4l-2 6zm38 8H52l3-6h10l-3 6zm-4 10H48l3-6h10l-3 6zm10 8h-8L72 8h8L68 32zM78 6h-4l2-6h4l-2 6zm-6 0h-4l2-6h4l-2 6zm44 26h-8l9-18h-8l-5 10h-8l8-16h24l-12 24zm48 0h-8l12-24h8l-12 24zm-10-8h-10l8-16h8l-5 10h2l-3 6z"
         fill="currentColor"

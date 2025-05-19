@@ -28,42 +28,82 @@ const notoSansJp = Noto_Sans_JP({
 
 const menuList = [
   {
-    icon: <SimpleIconsX className="h-[1.5rem] w-[1.5rem]" />,
+    icon: (
+      <SimpleIconsX
+        className="h-[1.5rem] w-[1.5rem]"
+        aria-hidden
+      />
+    ),
     title: "Twitter / X",
     href: "https://twitter.com/sitdigicre",
   },
   {
-    icon: <SimpleIconsYoutube className="h-[1.5rem] w-[1.5rem]" />,
+    icon: (
+      <SimpleIconsYoutube
+        className="h-[1.5rem] w-[1.5rem]"
+        aria-hidden
+      />
+    ),
     title: "YouTube",
     href: "https://www.youtube.com/@sitdigicre",
   },
   {
-    icon: <SimpleIconsGithub className="h-[1.5rem] w-[1.5rem]" />,
+    icon: (
+      <SimpleIconsGithub
+        className="h-[1.5rem] w-[1.5rem]"
+        aria-hidden
+      />
+    ),
     title: "GitHub",
     href: "https://github.com/SIT-DigiCre",
   },
   {
-    icon: <MaterialSymbolsMail className="h-[1.5rem] w-[1.5rem]" />,
+    icon: (
+      <MaterialSymbolsMail
+        className="h-[1.5rem] w-[1.5rem]"
+        aria-hidden
+      />
+    ),
     title: "お問い合わせ",
     href: "mailto:contact@digicre.net",
   },
   {
-    icon: <MaterialSymbolsArticle className="h-[1.5rem] w-[1.5rem]" />,
+    icon: (
+      <MaterialSymbolsArticle
+        className="h-[1.5rem] w-[1.5rem]"
+        aria-hidden
+      />
+    ),
     title: "デジコアブログ",
     href: "https://blog.digicre.net/",
   },
   {
-    icon: <MaterialSymbolsLogin className="h-[1.5rem] w-[1.5rem]" />,
+    icon: (
+      <MaterialSymbolsLogin
+        className="h-[1.5rem] w-[1.5rem]"
+        aria-hidden
+      />
+    ),
     title: "デジコア",
     href: "https://core3.digicre.net/",
   },
   {
-    icon: <MaterialSymbolsInfo className="h-[1.5rem] w-[1.5rem]" />,
+    icon: (
+      <MaterialSymbolsInfo
+        className="h-[1.5rem] w-[1.5rem]"
+        aria-hidden
+      />
+    ),
     title: "入部希望の方へ",
     href: "https://digicre.net/welcome/",
   },
   {
-    icon: <MaterialSymbolsSchool className="h-[1.5rem] w-[1.5rem]" />,
+    icon: (
+      <MaterialSymbolsSchool
+        className="h-[1.5rem] w-[1.5rem]"
+        aria-hidden
+      />
+    ),
     title: "芝浦工業大学",
     href: "https://www.shibaura-it.ac.jp/",
   },
@@ -91,7 +131,7 @@ export const metadata: Metadata = {
         url: "/ogp.png",
         width: 1200,
         height: 630,
-        alt: "デジクリ",
+        alt: "デジクリ Digital Creation Circle",
       },
     ],
   },
