@@ -1,7 +1,7 @@
 import { DigicreLogo, MaterialSymbolsOpenInNew } from "@/components/Icon";
 import Markdown from "react-markdown";
 import Gallery from "./_components/Gallery";
-import { Metadata } from "next/dist/types";
+import type { Metadata } from "next";
 
 const contents = [
   {
