@@ -1,6 +1,7 @@
 import { DigicreLogo, MaterialSymbolsOpenInNew } from "@/components/Icon";
 import Markdown from "react-markdown";
 import Gallery from "./_components/Gallery";
+import type { Metadata } from "next";
 
 const contents = [
   {
@@ -47,6 +48,12 @@ const menu = [
     href: "https://digicre.net/welcome/",
   },
 ];
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://digicre.net/",
+  },
+};
 
 export default function Home() {
   return (

@@ -11,8 +11,8 @@ import {
   SimpleIconsYoutube,
 } from "@/components/Icon";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Noto_Sans_JP } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { Inter, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -28,42 +28,82 @@ const notoSansJp = Noto_Sans_JP({
 
 const menuList = [
   {
-    icon: <SimpleIconsX className="h-[1.5rem] w-[1.5rem]" />,
+    icon: (
+      <SimpleIconsX
+        className="h-[1.5rem] w-[1.5rem]"
+        aria-hidden
+      />
+    ),
     title: "Twitter / X",
     href: "https://twitter.com/sitdigicre",
   },
   {
-    icon: <SimpleIconsYoutube className="h-[1.5rem] w-[1.5rem]" />,
+    icon: (
+      <SimpleIconsYoutube
+        className="h-[1.5rem] w-[1.5rem]"
+        aria-hidden
+      />
+    ),
     title: "YouTube",
     href: "https://www.youtube.com/@sitdigicre",
   },
   {
-    icon: <SimpleIconsGithub className="h-[1.5rem] w-[1.5rem]" />,
+    icon: (
+      <SimpleIconsGithub
+        className="h-[1.5rem] w-[1.5rem]"
+        aria-hidden
+      />
+    ),
     title: "GitHub",
     href: "https://github.com/SIT-DigiCre",
   },
   {
-    icon: <MaterialSymbolsMail className="h-[1.5rem] w-[1.5rem]" />,
+    icon: (
+      <MaterialSymbolsMail
+        className="h-[1.5rem] w-[1.5rem]"
+        aria-hidden
+      />
+    ),
     title: "お問い合わせ",
     href: "mailto:contact@digicre.net",
   },
   {
-    icon: <MaterialSymbolsArticle className="h-[1.5rem] w-[1.5rem]" />,
+    icon: (
+      <MaterialSymbolsArticle
+        className="h-[1.5rem] w-[1.5rem]"
+        aria-hidden
+      />
+    ),
     title: "デジコアブログ",
     href: "https://blog.digicre.net/",
   },
   {
-    icon: <MaterialSymbolsLogin className="h-[1.5rem] w-[1.5rem]" />,
+    icon: (
+      <MaterialSymbolsLogin
+        className="h-[1.5rem] w-[1.5rem]"
+        aria-hidden
+      />
+    ),
     title: "デジコア",
     href: "https://core3.digicre.net/",
   },
   {
-    icon: <MaterialSymbolsInfo className="h-[1.5rem] w-[1.5rem]" />,
+    icon: (
+      <MaterialSymbolsInfo
+        className="h-[1.5rem] w-[1.5rem]"
+        aria-hidden
+      />
+    ),
     title: "入部希望の方へ",
     href: "https://digicre.net/welcome/",
   },
   {
-    icon: <MaterialSymbolsSchool className="h-[1.5rem] w-[1.5rem]" />,
+    icon: (
+      <MaterialSymbolsSchool
+        className="h-[1.5rem] w-[1.5rem]"
+        aria-hidden
+      />
+    ),
     title: "芝浦工業大学",
     href: "https://www.shibaura-it.ac.jp/",
   },
@@ -86,7 +126,19 @@ export const metadata: Metadata = {
     title: "芝浦工業大学 デジクリ",
     siteName: "芝浦工業大学 デジクリ",
     description: "芝浦工業大学の公認サークル『デジクリ』の Web サイトです。",
-    images: "/ogp.png",
+    images: [
+      {
+        url: "/ogp.png",
+        width: 1200,
+        height: 630,
+        alt: "デジクリ Digital Creation Circle",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@sitdigicre",
+    creator: "@sitdigicre",
   },
 };
 
@@ -97,6 +149,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <GoogleAnalytics gaId="G-5GLTJ9X6XX" />
       <body className={`${notoSansJp.variable} ${inter.variable}`}>
         {children}
 
