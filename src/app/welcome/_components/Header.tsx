@@ -85,7 +85,7 @@ export default function Header() {
   };
 
   return (
-    <header className="header">
+    <header className="relative">
       <input
         type="checkbox"
         name="toggle"
@@ -97,16 +97,18 @@ export default function Header() {
 
       <label
         htmlFor="header-toggle"
-        className={`header__toggle-button header__toggle-button--open ${!isOpen ? "block" : "hidden"}`}
+        className={`fixed top-0 left-0 z-10 cursor-pointer rounded-br-[16px] bg-[#00b0f0] p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.5)] transition-colors duration-300 ease-in-out hover:bg-[#71d9ff] lg:hidden ${!isOpen ? "block" : "hidden"}`}
         aria-label="メニューを開く"
       >
         <MaterialSymbolsMenu className="block h-8 w-8 text-white" />
       </label>
 
-      <div className={`header__wrapper ${isOpen ? "block" : "hidden lg:flex"}`}>
+      <div
+        className={`fixed top-0 left-0 z-10 flex h-full w-full flex-col gap-8 overflow-y-auto bg-[#202020] px-4 py-16 text-white lg:w-1/4 ${isOpen ? "block" : "hidden lg:flex"}`}
+      >
         <label
           htmlFor="header-toggle"
-          className="header__toggle-button header__toggle-button--close"
+          className="absolute top-0 left-0 z-10 cursor-pointer rounded-br-[16px] bg-[#00b0f0] p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.5)] transition-colors duration-300 ease-in-out hover:bg-[#71d9ff] lg:hidden"
           aria-label="メニューを閉じる"
         >
           <MaterialSymbolsClose className="block h-8 w-8 text-white" />
@@ -114,14 +116,14 @@ export default function Header() {
 
         <Link
           href="/welcome"
-          className="logo mx-auto block"
+          className="mx-auto block h-[48px] w-[176px] text-white"
           aria-label="デジクリ"
           onClick={handleLinkClick}
         >
           <DigicreLogo className="h-12 w-[176px] text-white" />
         </Link>
 
-        <nav className="menu">
+        <nav className="overflow-hidden rounded-2xl bg-[#404040]">
           <ul>
             {navigationItems.map((item) => {
               const Icon = item.icon;
@@ -133,7 +135,7 @@ export default function Header() {
                   <li key={item.href}>
                     <a
                       href={item.href}
-                      className="menu__item"
+                      className="flex flex-grow items-center gap-4 p-4 hover:bg-[#606060]"
                       onClick={handleLinkClick}
                     >
                       <Icon className="h-4 w-4" />
@@ -150,7 +152,7 @@ export default function Header() {
                       href={item.href}
                       rel="noopener noreferrer"
                       target="_blank"
-                      className="menu__item menu__item--join-us"
+                      className="flex flex-grow items-center justify-center gap-2 bg-[#00b0f0] p-4 transition-colors duration-300 ease-in-out hover:bg-[#71d9ff]"
                       onClick={handleLinkClick}
                     >
                       {item.label}
@@ -165,7 +167,7 @@ export default function Header() {
           </ul>
         </nav>
 
-        <nav className="menu">
+        <nav className="overflow-hidden rounded-2xl bg-[#404040]">
           <ul>
             {socialLinks.map((link) => {
               const Icon = link.icon;
@@ -175,7 +177,7 @@ export default function Header() {
                     href={link.href}
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="menu__item"
+                    className="flex flex-grow items-center gap-4 p-4 hover:bg-[#606060]"
                     onClick={handleLinkClick}
                   >
                     <Icon className="h-4 w-4" />
