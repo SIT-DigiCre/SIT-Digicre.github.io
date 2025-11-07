@@ -94,7 +94,7 @@ export default function TeamsSection() {
                   className="teams__card-image absolute inset-0 h-full w-full object-cover"
                   loading="lazy"
                 />
-                <h3 className="absolute right-0 bottom-0 left-0 flex items-center gap-2 rounded-tr-2xl bg-black/50 p-4 text-xl leading-tight font-bold backdrop-blur-sm [font-feature-settings:'palt']">
+                <h3 className="absolute right-0 bottom-0 left-0 flex w-fit items-center gap-2 rounded-tr-2xl bg-black/50 p-4 text-xl leading-tight font-bold backdrop-blur-sm [font-feature-settings:'palt']">
                   {team.title}
                 </h3>
               </>
