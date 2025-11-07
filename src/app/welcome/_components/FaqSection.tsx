@@ -114,12 +114,12 @@ const faqs = [
     answer: (
       <p>
         <Link
-          href="https://twitter.com/sitdigicre"
+          href="https://x.com/sitdigicre"
           rel="noopener noreferrer"
           target="_blank"
           className="font-bold text-[#005aff] hover:underline"
         >
-          デジクリ公式 Twitter
+          デジクリ公式 X (Twitter)
           <MaterialSymbolsOpenInNew className="relative bottom-0.5 inline-block h-4 w-4" />
         </Link>
         宛に DM をお送りいただくか、
@@ -154,7 +154,7 @@ export default function FaqSection() {
             key={faq.question}
             className="faq__card rounded-2xl bg-white p-8"
           >
-            <h3 className="mb-4 text-lg leading-tight font-bold tracking-normal [font-feature-settings:'palt']">
+            <h3 className="mb-4 text-lg leading-tight font-bold tracking-normal [font-feature-settings:'palt'] lg:text-2xl">
               {faq.question}
             </h3>
 

@@ -47,7 +47,7 @@ const navigationItems = [
 
 const socialLinks = [
   {
-    href: "https://twitter.com/sitdigicre",
+    href: "https://x.com/sitdigicre",
     label: "X (Twitter)",
     icon: SimpleIconsX,
   },

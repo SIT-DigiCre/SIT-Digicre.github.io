@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Inter, Noto_Sans_JP } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  display: "swap",
-});
-const notoSansJp = Noto_Sans_JP({
-  subsets: ["vietnamese"],
-  variable: "--font-noto-sans-jp",
   display: "swap",
 });
 
@@ -55,9 +50,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <GoogleAnalytics gaId="G-5GLTJ9X6XX" />
-      <body className={`${notoSansJp.variable} ${inter.variable}`}>
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

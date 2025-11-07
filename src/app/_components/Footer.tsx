@@ -19,8 +19,8 @@ const menuList = [
         aria-hidden
       />
     ),
-    title: "Twitter / X",
-    href: "https://twitter.com/sitdigicre",
+    title: "X (Twitter)",
+    href: "https://x.com/sitdigicre",
   },
   {
     icon: (

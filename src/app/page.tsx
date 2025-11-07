@@ -42,7 +42,7 @@ const contents = [
 const menu = [
   {
     title: "お知らせ (Twitter / X)",
-    href: "https://twitter.com/sitdigicre",
+    href: "https://x.com/sitdigicre",
   },
   {
     title: "入部希望の方へ",
