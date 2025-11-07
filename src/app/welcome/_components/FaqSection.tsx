@@ -5,9 +5,6 @@ const memberTableData = [
   { year: "2025", total: "219", female: "36" },
   { year: "2024", total: "116", female: "19" },
   { year: "2023", total: "121", female: "18" },
-  { year: "2022", total: "86", female: "13" },
-  { year: "2021", total: "50", female: "7" },
-  { year: "2020", total: "18", female: "2" },
 ];
 
 const faqs = [
@@ -44,18 +41,18 @@ const faqs = [
           <strong>219 名</strong>のデジクリ部員が活動しています。
         </p>
         <p>
-          <strong>過去 6 年間</strong>の入学者（学部生）別の<strong>内訳</strong>は、下表の通りです。
+          <strong>過去 3 年間</strong>の部員数の推移は、下表の通りです。
         </p>
         <table className="faq__content-table mx-auto">
           <thead>
             <tr>
-              <th className="border border-[#404040] p-4 text-center font-bold leading-tight">
+              <th className="border border-[#404040] p-4 text-center leading-tight font-bold">
                 入学年度
               </th>
-              <th className="border border-[#404040] p-4 text-center font-bold leading-tight">
+              <th className="border border-[#404040] p-4 text-center leading-tight font-bold">
                 合計
               </th>
-              <th className="border border-[#404040] p-4 text-center font-bold leading-tight">
+              <th className="border border-[#404040] p-4 text-center leading-tight font-bold">
                 女子
               </th>
             </tr>
@@ -64,11 +61,19 @@ const faqs = [
             {memberTableData.map((row) => (
               <tr
                 key={row.year}
-                className={parseInt(row.year) % 2 === 0 ? "bg-white" : "bg-[#e9e9e9]"}
+                className={
+                  parseInt(row.year) % 2 === 0 ? "bg-white" : "bg-[#e9e9e9]"
+                }
               >
-                <td className="border border-[#404040] p-4 text-center">{row.year}</td>
-                <td className="border border-[#404040] p-4 text-center">{row.total}</td>
-                <td className="border border-[#404040] p-4 text-center">{row.female}</td>
+                <td className="border border-[#404040] p-4 text-center">
+                  {row.year}
+                </td>
+                <td className="border border-[#404040] p-4 text-center">
+                  {row.total}
+                </td>
+                <td className="border border-[#404040] p-4 text-center">
+                  {row.female}
+                </td>
               </tr>
             ))}
           </tbody>
@@ -81,7 +86,8 @@ const faqs = [
     answer: (
       <>
         <p>
-          <strong>毎週月曜の 21 時</strong>より <strong>Zoom で実施しているミーティング</strong>
+          <strong>毎週月曜の 21 時</strong>より{" "}
+          <strong>Zoom で実施しているミーティング</strong>
           のことです。
         </p>
         <p>
@@ -114,7 +120,7 @@ const faqs = [
           className="font-bold text-[#005aff] hover:underline"
         >
           デジクリ公式 Twitter
-          <MaterialSymbolsOpenInNew className="relative top-0.5 inline-block h-4 w-4" />
+          <MaterialSymbolsOpenInNew className="relative bottom-0.5 inline-block h-4 w-4" />
         </Link>
         宛に DM をお送りいただくか、
         <Link
@@ -124,7 +130,7 @@ const faqs = [
           className="font-bold text-[#005aff] hover:underline"
         >
           メール
-          <MaterialSymbolsOpenInNew className="relative top-0.5 inline-block h-4 w-4" />
+          <MaterialSymbolsOpenInNew className="relative bottom-0.5 inline-block h-4 w-4" />
         </Link>
         にてお問い合わせください。
       </p>
@@ -134,23 +140,30 @@ const faqs = [
 
 export default function FaqSection() {
   return (
-    <div className="faq bg-[#e9e9e9] p-8 text-black" id="faq">
-      <h2 className="mb-8 text-2xl font-bold leading-tight tracking-normal [font-feature-settings:'palt'] md:text-3xl">
+    <div
+      className="faq bg-[#e9e9e9] p-8 text-black"
+      id="faq"
+    >
+      <h2 className="mb-8 text-2xl leading-tight font-bold tracking-normal [font-feature-settings:'palt'] md:text-3xl">
         よくある質問
       </h2>
 
       <div className="faq__wrapper grid gap-8">
         {faqs.map((faq) => (
-          <article key={faq.question} className="faq__card rounded-2xl bg-white p-8">
-            <h3 className="mb-4 text-xl font-bold leading-tight tracking-normal [font-feature-settings:'palt']">
+          <article
+            key={faq.question}
+            className="faq__card rounded-2xl bg-white p-8"
+          >
+            <h3 className="mb-4 text-lg leading-tight font-bold tracking-normal [font-feature-settings:'palt']">
               {faq.question}
             </h3>
 
-            <div className="faq__content space-y-2 leading-[1.5]">{faq.answer}</div>
+            <div className="faq__content space-y-2 leading-[1.5]">
+              {faq.answer}
+            </div>
           </article>
         ))}
       </div>
     </div>
   );
 }
-
