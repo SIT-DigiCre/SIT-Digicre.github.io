@@ -80,7 +80,7 @@ const menuList = [
       />
     ),
     title: "入部希望の方へ",
-    href: "https://digicre.net/welcome/",
+    href: "/welcome/",
   },
   {
     icon: (
@@ -110,8 +110,12 @@ export default function Footer() {
                 {item.icon}
                 <a
                   href={item.href}
-                  target="_blank"
-                  rel="noreferrer"
+                  rel={
+                    item.href.startsWith("http")
+                      ? "noopener noreferrer"
+                      : undefined
+                  }
+                  target={item.href.startsWith("http") ? "_blank" : "_self"}
                   className="linkOverlay grow"
                 >
                   {item.title}

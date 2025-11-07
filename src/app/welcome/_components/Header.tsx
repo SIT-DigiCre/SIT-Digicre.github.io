@@ -61,7 +61,7 @@ const socialLinks = [
   //   icon: SimpleIconsLine,
   // },
   {
-    href: "https://digicre.net",
+    href: "/",
     label: "ウェブサイト",
     icon: MaterialSymbolsLanguage,
   },
@@ -174,8 +174,12 @@ export default function Header() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    rel="noopener noreferrer"
-                    target="_blank"
+                    rel={
+                      link.href.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
+                    target={link.href.startsWith("http") ? "_blank" : "_self"}
                     className="flex flex-grow items-center gap-4 p-4 hover:bg-[#606060]"
                     onClick={handleLinkClick}
                   >
