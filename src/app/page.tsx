@@ -62,7 +62,7 @@ export default function Home() {
       <main className="bg-sky">
         <div className="container">
           <section className="flex flex-col items-center gap-y-[32px] md:gap-y-[64px]">
-            <DigicreLogo className="logo" />
+            <DigicreLogo className="h-12 w-[176px] text-white md:h-24 md:w-[352px]" />
 
             <Gallery />
           </section>

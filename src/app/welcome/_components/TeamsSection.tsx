@@ -43,14 +43,14 @@ const teams = [
 export default function TeamsSection() {
   return (
     <div
-      className="teams bg-white p-8 text-black"
+      className="bg-white p-8 text-black"
       id="teams"
     >
       <h2 className="mb-8 text-2xl leading-tight font-bold tracking-normal [font-feature-settings:'palt'] md:text-3xl">
         班紹介
       </h2>
 
-      <div className="teams__content mb-8 space-y-2 leading-[1.5]">
+      <div className="mb-8 space-y-2 leading-[1.5]">
         <p>
           デジクリにおける「<strong>班</strong>」とは、「
           <strong>自分の興味分野</strong>
@@ -58,11 +58,11 @@ export default function TeamsSection() {
         </p>
       </div>
 
-      <div className="teams__wrapper grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {teams.map((team) => (
           <article
             key={team.title}
-            className="teams__card relative aspect-video overflow-hidden rounded-2xl bg-black text-white"
+            className="relative aspect-video overflow-hidden rounded-2xl bg-black text-white"
           >
             {team.href ? (
               <Link
@@ -76,7 +76,7 @@ export default function TeamsSection() {
                   alt=""
                   width={256}
                   height={144}
-                  className="teams__card-image absolute inset-0 h-full w-full object-cover"
+                  className="absolute inset-0 h-full w-full object-cover"
                   loading="lazy"
                 />
                 <h3 className="absolute right-0 bottom-0 left-0 flex w-fit items-center gap-2 rounded-tr-2xl bg-black/50 p-4 text-xl leading-tight font-bold backdrop-blur-sm [font-feature-settings:'palt']">
@@ -91,7 +91,7 @@ export default function TeamsSection() {
                   alt=""
                   width={256}
                   height={144}
-                  className="teams__card-image absolute inset-0 h-full w-full object-cover"
+                  className="absolute inset-0 h-full w-full object-cover"
                   loading="lazy"
                 />
                 <h3 className="absolute right-0 bottom-0 left-0 flex w-fit items-center gap-2 rounded-tr-2xl bg-black/50 p-4 text-xl leading-tight font-bold backdrop-blur-sm [font-feature-settings:'palt']">

@@ -4,7 +4,7 @@ import { MaterialSymbolsKeyboardArrowDown } from "@/components/Icon";
 
 export default function Hero() {
   return (
-    <div className="pv relative h-screen w-full md:aspect-video md:h-auto md:max-h-screen">
+    <div className="relative h-screen w-full md:aspect-video md:h-auto md:max-h-screen">
       <iframe
         width={320}
         height={240}

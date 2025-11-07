@@ -69,10 +69,6 @@
     @apply before:absolute before:inset-0 before:h-full before:w-full before:content-[""];
   }
 
-  .footer {
-    @apply bg-[#202020] p-4 text-center text-white;
-  }
-
   .body {
     @apply flex min-h-screen flex-col lg:ml-[25%];
   }
