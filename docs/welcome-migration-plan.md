@@ -48,7 +48,8 @@
 
 1. ~~`src/app/layout.tsx` からトップページ専用のフッター／配色を取り除き、共通設定のみを残す。同時に `src/app/page.tsx` へ移した要素を組み込み、現行トップページのデザインを保持。~~
    - 2025-11-07: `src/app/layout.tsx` からフッターと `menuList` を削除し、`src/app/page.tsx` に移設してトップページ内で同じスタイルのフッターを表示するよう調整。
-2. `public/welcome/` ディレクトリを作成し、`temp/img` など必要画像をコピー配置 (スクリプトではなく手動で必要枚数)。
+2. ~~`public/welcome/` ディレクトリを作成し、`temp/img` など必要画像をコピー配置 (スクリプトではなく手動で必要枚数)。~~
+   - 2025-11-07: `public/welcome/` と `public/welcome/teams/` を作成し、`temp/img` 配下の OGP・紹介・班別画像 9 点をコピー (OGP は `ogp.png` にリネーム) して配置。
 3. `src/app/welcome/` 以下にページとコンポーネント群を実装。Tailwind クラス, データ配列, SVG アイコン整理。
 4. ヘッダーメニューの開閉ロジックを React で構築し、RWD を確認。
 5. FAQ テーブルをセマンティック HTML で再現 (Tailwind でスタイリング)。
