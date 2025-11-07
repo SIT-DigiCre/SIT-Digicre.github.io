@@ -50,31 +50,26 @@ const socialLinks = [
     href: "https://twitter.com/sitdigicre",
     label: "X (Twitter)",
     icon: SimpleIconsX,
-    iconSize: 32,
   },
   {
     href: "https://www.youtube.com/@sitdigicre",
     label: "YouTube",
     icon: SimpleIconsYoutube,
-    iconSize: 16,
   },
-  {
-    href: "https://line.me/ti/g2/UfhEOyteJRjyQLm-c9Mmhj_9wvIKCBDEohh_WQ",
-    label: "LINE オープンチャット",
-    icon: SimpleIconsLine,
-    iconSize: 32,
-  },
+  // {
+  //   href: "https://line.me/ti/g2/UfhEOyteJRjyQLm-c9Mmhj_9wvIKCBDEohh_WQ",
+  //   label: "LINE オープンチャット",
+  //   icon: SimpleIconsLine,
+  // },
   {
     href: "https://digicre.net",
     label: "ウェブサイト",
     icon: MaterialSymbolsLanguage,
-    iconSize: 16,
   },
   {
     href: "mailto:contact@digicre.net",
     label: "お問い合わせ",
     icon: MaterialSymbolsMail,
-    iconSize: 16,
   },
 ];
 
@@ -90,7 +85,7 @@ export default function Header() {
   };
 
   return (
-    <>
+    <header className="header">
       <input
         type="checkbox"
         name="toggle"
@@ -108,9 +103,7 @@ export default function Header() {
         <MaterialSymbolsMenu className="block h-8 w-8 text-white" />
       </label>
 
-      <div
-        className={`header__wrapper top-0 left-0 z-10 lg:fixed ${isOpen ? "block" : "hidden lg:flex"}`}
-      >
+      <div className={`header__wrapper ${isOpen ? "block" : "hidden lg:flex"}`}>
         <label
           htmlFor="header-toggle"
           className="header__toggle-button header__toggle-button--close"
@@ -125,7 +118,7 @@ export default function Header() {
           aria-label="デジクリ"
           onClick={handleLinkClick}
         >
-          <DigicreLogo className="h-12 w-[176px] text-white md:h-24 md:w-[352px]" />
+          <DigicreLogo className="h-12 w-[176px] text-white" />
         </Link>
 
         <nav className="menu">
@@ -140,7 +133,7 @@ export default function Header() {
                   <li key={item.href}>
                     <a
                       href={item.href}
-                      className="menu__item menu__item--toc"
+                      className="menu__item"
                       onClick={handleLinkClick}
                     >
                       <Icon className="h-4 w-4" />
@@ -176,7 +169,6 @@ export default function Header() {
           <ul>
             {socialLinks.map((link) => {
               const Icon = link.icon;
-              const iconClass = link.iconSize === 32 ? "h-8 w-8" : "h-4 w-4";
               return (
                 <li key={link.href}>
                   <a
@@ -186,7 +178,7 @@ export default function Header() {
                     className="menu__item"
                     onClick={handleLinkClick}
                   >
-                    <Icon className={iconClass} />
+                    <Icon className="h-4 w-4" />
                     {link.label}
                     <MaterialSymbolsOpenInNew className="ml-auto h-4 w-4" />
                   </a>
@@ -196,6 +188,6 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-    </>
+    </header>
   );
 }

@@ -32,7 +32,7 @@
   }
 
   .logo {
-    @apply h-[48px] w-[176px] text-white md:h-[96px] md:w-[352px];
+    @apply h-[48px] w-[176px] text-white;
   }
 
   .card {
@@ -72,7 +72,7 @@
   }
 
   .header__wrapper {
-    @apply fixed left-0 top-0 z-10 flex h-full w-full flex-col gap-8 overflow-y-auto bg-[#202020] p-4 text-white lg:static lg:w-1/4;
+    @apply fixed left-0 top-0 z-10 flex h-full w-full flex-col gap-8 overflow-y-auto bg-[#202020] py-16 px-4 text-white lg:w-1/4;
   }
 
   .header__toggle-button {
@@ -80,7 +80,7 @@
   }
 
   .header__toggle-button--close {
-    @apply absolute right-4 top-4 lg:hidden;
+    @apply absolute left-0 top-0 z-10 cursor-pointer rounded-br-[16px] bg-[#00b0f0] p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.5)] transition-colors duration-300 ease-in-out hover:bg-[#71d9ff] lg:hidden;
   }
 
   .menu {
@@ -92,11 +92,7 @@
   }
 
   .menu__item--join-us {
-    @apply justify-center gap-0 bg-[#00b0f0] transition-colors duration-300 ease-in-out hover:bg-[#71d9ff];
-  }
-
-  .menu__item--toc {
-    @apply hidden lg:flex;
+    @apply justify-center gap-2 bg-[#00b0f0] transition-colors duration-300 ease-in-out hover:bg-[#71d9ff];
   }
 
   .pv {
