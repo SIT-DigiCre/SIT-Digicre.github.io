@@ -181,3 +181,131 @@ export function DigicreLogo(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function MaterialSymbolsMenu(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      role="img"
+      {...props}
+    >
+      <title>メニューを開く</title>
+      <path
+        fill="currentColor"
+        d="M3 18v-2h18v2H3Zm0-5v-2h18v2H3Zm0-5V6h18v2H3Z"
+      />
+    </svg>
+  );
+}
+
+export function MaterialSymbolsClose(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      role="img"
+      {...props}
+    >
+      <title>メニューを閉じる</title>
+      <path
+        fill="currentColor"
+        d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6L6.4 19Z"
+      />
+    </svg>
+  );
+}
+
+export function MaterialSymbolsGroups(props: SVGProps<SVGSVGElement>) {
+  return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M0 18v-1.575q0-1.1 1.113-1.763T4 14q.325 0 .625.013t.575.062q-.35.5-.525 1.075T4.5 16.375V18H0Zm6 0v-1.625q0-1.625 1.663-2.625t4.337-1q2.7 0 4.35 1T18 16.375V18H6Zm13.5 0v-1.625q0-.65-.163-1.225t-.487-1.075q.275-.05.563-.062T20 14q1.8 0 2.9.663t1.1 1.762V18h-4.5ZM4 13q-.825 0-1.413-.588T2 11q0-.85.588-1.425T4 9q.85 0 1.425.575T6 11q0 .825-.575 1.413T4 13Zm16 0q-.825 0-1.413-.588T18 11q0-.85.588-1.425T20 9q.85 0 1.425.575T22 11q0 .825-.575 1.413T20 13Zm-8-1q-1.25 0-2.125-.875T9 9q0-1.275.875-2.138T12 6q1.275 0 2.138.863T15 9q0 1.25-.863 2.125T12 12Z"
+      />
+    </svg>
+  );
+}
+
+export function MaterialSymbolsHelp(props: SVGProps<SVGSVGElement>) {
+  return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M10.6 16q0-2.025.363-2.913T12.5 11.15q1.025-.9 1.563-1.563t.537-1.512q0-1.025-.687-1.7T12 5.7q-1.275 0-1.938.775T9.126 8.05L6.55 6.95q.525-1.6 1.925-2.775T12 3q2.625 0 4.038 1.463t1.412 3.512q0 1.25-.537 2.138t-1.688 2.012Q14 13.3 13.738 13.913T13.475 16H10.6Zm1.4 6q-.825 0-1.412-.588T10 20q0-.825.588-1.413T12 18q.825 0 1.413.588T14 20q0 .825-.588 1.413T12 22Z"
+      />
+    </svg>
+  );
+}
+
+export function MaterialSymbolsKeyboardArrowDown(props: SVGProps<SVGSVGElement>) {
+  return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="m12 20l-8-8l1.4-1.425l5.6 5.6V4h2v12.175l5.6-5.6L20 12l-8 8Z"
+      />
+    </svg>
+  );
+}
+
+export function SimpleIconsLine(props: SVGProps<SVGSVGElement>) {
+  return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M19.365 9.863a.631.631 0 0 1 0 1.261H17.61v1.125h1.755a.63.63 0 1 1 0 1.259h-2.386a.631.631 0 0 1-.627-.629V8.108c0-.345.282-.63.63-.63h2.386a.63.63 0 0 1-.003 1.26H17.61v1.125h1.755zm-3.855 3.016a.63.63 0 0 1-.631.627a.618.618 0 0 1-.51-.25l-2.443-3.317v2.94a.63.63 0 0 1-1.257 0V8.108a.627.627 0 0 1 .624-.628c.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63c.345 0 .63.285.63.63v4.771zm-5.741 0a.632.632 0 0 1-.631.629a.631.631 0 0 1-.627-.629V8.108c0-.345.282-.63.63-.63c.346 0 .628.285.628.63v4.771zm-2.466.629H4.917a.634.634 0 0 1-.63-.629V8.108c0-.345.285-.63.63-.63c.348 0 .63.285.63.63v4.141h1.756a.63.63 0 0 1 0 1.259M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608c.391.082.923.258 1.058.59c.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645c1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"
+      />
+    </svg>
+  );
+}
+
+export function MaterialSymbolsLanguage(props: SVGProps<SVGSVGElement>) {
+  return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 32 32"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M29 14H4l3-6h25l-3 6zm-3 10h-6l-4 8H8l4-8H0l3-6h26l-3 6zm4-18h-4l2-6h4l-2 6zm-6 0h-4l2-6h4l-2 6z"
+      />
+    </svg>
+  );
+}
