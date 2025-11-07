@@ -28,7 +28,7 @@ export default function Hero() {
 
       <Link
         href="#about-us"
-        className="absolute right-0 bottom-16 z-100 flex items-center gap-4 rounded-l-2xl bg-[#00b0f0] p-4 text-white shadow-[0_2px_8px_0_rgba(0,0,0,0.5)] transition-colors duration-300 ease-in-out [writing-mode:vertical-lr] hover:bg-[#71d9ff]"
+        className="absolute right-0 bottom-16 flex items-center gap-4 rounded-l-2xl bg-[#00b0f0] p-4 text-white shadow-[0_2px_8px_0_rgba(0,0,0,0.5)] transition-colors duration-300 ease-in-out [writing-mode:vertical-lr] hover:bg-[#71d9ff]"
       >
         Scroll
         <MaterialSymbolsKeyboardArrowDown className="h-4 w-4" />
