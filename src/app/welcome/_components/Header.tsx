@@ -12,7 +12,6 @@ import {
   MaterialSymbolsOpenInNew,
   SimpleIconsX,
   SimpleIconsYoutube,
-  SimpleIconsLine,
   MaterialSymbolsLanguage,
   MaterialSymbolsMail,
 } from "@/components/Icon";
