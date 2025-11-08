@@ -122,8 +122,8 @@ export default function Header() {
           <DigicreLogo className="h-12 w-[176px] text-white" />
         </Link>
 
-        <nav className="overflow-hidden rounded-2xl bg-[#404040]">
-          <ul>
+        <nav>
+          <ul className="overflow-hidden rounded-2xl bg-[#404040]">
             {navigationItems.map((item) => {
               const Icon = item.icon;
               const isToc = item.type === "toc";
@@ -166,8 +166,8 @@ export default function Header() {
           </ul>
         </nav>
 
-        <nav className="overflow-hidden rounded-2xl bg-[#404040]">
-          <ul>
+        <nav>
+          <ul className="overflow-hidden rounded-2xl bg-[#404040]">
             {socialLinks.map((link) => {
               const Icon = link.icon;
               return (
