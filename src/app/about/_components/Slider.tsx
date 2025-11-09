@@ -32,7 +32,7 @@ export default function Slider({ slides }: SliderProps) {
           type: "slide",
           interval: 8000,
           autoplay: true,
-          arrows: true,
+          arrows: slides.length > 1,
           pagination: true,
           speed: 700,
           video: {
@@ -58,29 +58,28 @@ export default function Slider({ slides }: SliderProps) {
           if (slide.type === "youtube") {
             // YouTube URLから動画IDを抽出
             const youtubeId = slide.url.match(
-              /(?:youtube\.com\/embed\/|youtu\.be\/|youtube\.com\/watch\?v=)([^&\n?#]+)/
+              /(?:youtube\.com\/embed\/|youtu\.be\/|youtube\.com\/watch\?v=)([^&\n?#]+)/,
             )?.[1];
 
             if (!youtubeId) {
               return null;
             }
 
+            // サムネイルが提供されていない場合、YouTubeのサムネイル画像を自動取得
+            const thumbnailUrl =
+              slide.thumbnail ||
+              `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`;
+
             return (
               <SplideSlide
                 key={`${slide.url}-${index}`}
-                data-splide-youtube={`https://www.youtube.com/watch?v=${youtubeId}`}
+                data-splide-youtube={`https://www.youtube.com/watch?v=${youtubeId}&autoplay=1`}
               >
-                {slide.thumbnail ? (
-                  <img
-                    src={slide.thumbnail}
-                    alt={slide.alt || "YouTube動画"}
-                    className="aspect-video object-cover"
-                  />
-                ) : (
-                  <div className="flex aspect-video items-center justify-center bg-gray-800">
-                    <span className="text-white">YouTube動画</span>
-                  </div>
-                )}
+                <img
+                  src={thumbnailUrl}
+                  alt={slide.alt || "YouTube動画"}
+                  className="aspect-video object-cover"
+                />
               </SplideSlide>
             );
           }
@@ -91,4 +90,3 @@ export default function Slider({ slides }: SliderProps) {
     </div>
   );
 }
-
