@@ -6,27 +6,27 @@ const teams = [
   {
     title: "PG 班",
     image: "/welcome/teams/pg.webp",
-    href: "https://digicre.net/about/pg",
+    href: "/about/pg",
   },
   {
     title: "イラスト班",
     image: "/welcome/teams/2dcg.webp",
-    href: "https://digicre.net/about/2dcg",
+    href: "/about/2dcg",
   },
   {
     title: "3DCG 班",
     image: "/welcome/teams/3dcg.webp",
-    href: "https://digicre.net/about/3dcg",
+    href: "/about/3dcg",
   },
   {
     title: "DTM 班",
     image: "/welcome/teams/dtm.webp",
-    href: "https://digicre.net/about/dtm",
+    href: "/about/dtm",
   },
   {
     title: "Movie 班",
     image: "/welcome/teams/movie.webp",
-    href: "https://digicre.net/about/movie",
+    href: "/about/movie",
   },
   {
     title: "VTuber 班",
@@ -67,8 +67,6 @@ export default function TeamsSection() {
             {team.href ? (
               <Link
                 href={team.href}
-                rel="noopener noreferrer"
-                target="_blank"
                 className="absolute inset-0"
               >
                 <Image

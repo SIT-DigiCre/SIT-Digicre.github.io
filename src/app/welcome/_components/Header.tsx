@@ -18,19 +18,19 @@ import {
 
 const navigationItems = [
   {
-    href: "#about-us",
+    href: "/welcome#about-us",
     label: "デジクリとは？",
     icon: MaterialSymbolsInfo,
     type: "toc" as const,
   },
   {
-    href: "#teams",
+    href: "/welcome#teams",
     label: "班紹介",
     icon: MaterialSymbolsGroups,
     type: "toc" as const,
   },
   {
-    href: "#faq",
+    href: "/welcome#faq",
     label: "よくある質問",
     icon: MaterialSymbolsHelp,
     type: "toc" as const,

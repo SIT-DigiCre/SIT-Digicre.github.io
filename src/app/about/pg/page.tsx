@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Header from "../_components/Header";
 import Slider from "../_components/Slider";
+import Header from "@/app/welcome/_components/Header";
 
 export const metadata: Metadata = {
   title: "PG班 - デジクリ",
