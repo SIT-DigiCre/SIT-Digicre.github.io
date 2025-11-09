@@ -289,7 +289,7 @@ export const metadata: Metadata = {
 
 1. ✅ ドキュメント作成(このファイル)
 2. ✅ アセットファイルのコピー
-3. 共通コンポーネントの作成
+3. ✅ 共通コンポーネントの作成
    - `src/app/about/_components/Header.tsx`
    - `src/app/about/_components/Footer.tsx`
    - `src/app/about/_components/Slider.tsx`(オプション)
@@ -308,7 +308,7 @@ export const metadata: Metadata = {
 
 ## 注意事項
 
-- HTMLコメント内の情報(例: `<!--アップルパイやべぇ、すこ-->`)は移行しない
+- HTMLコメント内の情報(例: `<!--アップルパイやべぇ、すこ-->`)も移行する
 - 既存のBootstrap依存コードはすべて削除
 - 外部CDNへの依存をなくす
 - 画像の最適化は後で検討(webp変換など)
