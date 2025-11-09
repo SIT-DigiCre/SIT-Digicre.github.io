@@ -6,6 +6,9 @@ import {
   DigicreLogo,
   MaterialSymbolsMenu,
   MaterialSymbolsClose,
+  MaterialSymbolsInfo,
+  MaterialSymbolsGroups,
+  MaterialSymbolsHelp,
   MaterialSymbolsOpenInNew,
   SimpleIconsX,
   SimpleIconsYoutube,
@@ -13,15 +16,33 @@ import {
   MaterialSymbolsMail,
 } from "@/components/Icon";
 
-type NavigationItem = {
-  href: string;
-  label: string;
-  icon: React.ComponentType<{ className?: string }>;
-};
-
-type HeaderProps = {
-  navigationItems: NavigationItem[];
-};
+const navigationItems = [
+  {
+    href: "#about-us",
+    label: "デジクリとは？",
+    icon: MaterialSymbolsInfo,
+    type: "toc" as const,
+  },
+  {
+    href: "#teams",
+    label: "班紹介",
+    icon: MaterialSymbolsGroups,
+    type: "toc" as const,
+  },
+  {
+    href: "#faq",
+    label: "よくある質問",
+    icon: MaterialSymbolsHelp,
+    type: "toc" as const,
+  },
+  {
+    href: "https://forms.gle/cY25Kc6fssqv2tZz9",
+    label: "入部受付",
+    icon: MaterialSymbolsOpenInNew,
+    type: "external" as const,
+    isJoinUs: true,
+  },
+];
 
 const socialLinks = [
   {
@@ -34,6 +55,11 @@ const socialLinks = [
     label: "YouTube",
     icon: SimpleIconsYoutube,
   },
+  // {
+  //   href: "https://line.me/ti/g2/UfhEOyteJRjyQLm-c9Mmhj_9wvIKCBDEohh_WQ",
+  //   label: "LINE オープンチャット",
+  //   icon: SimpleIconsLine,
+  // },
   {
     href: "/",
     label: "ウェブサイト",
@@ -46,7 +72,7 @@ const socialLinks = [
   },
 ];
 
-export default function Header({ navigationItems }: HeaderProps) {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -88,7 +114,7 @@ export default function Header({ navigationItems }: HeaderProps) {
         </label>
 
         <Link
-          href="/about"
+          href="/welcome"
           className="mx-auto block h-[48px] w-[176px] text-white"
           aria-label="デジクリ"
           onClick={handleLinkClick}
@@ -100,22 +126,42 @@ export default function Header({ navigationItems }: HeaderProps) {
           <ul className="overflow-hidden rounded-2xl bg-[#404040]">
             {navigationItems.map((item) => {
               const Icon = item.icon;
-              const isExternal = item.href.startsWith("http");
+              const isToc = item.type === "toc";
+              const isJoinUs = item.isJoinUs;
 
-              return (
-                <li key={item.href}>
-                  <a
-                    href={item.href}
-                    rel={isExternal ? "noopener noreferrer" : undefined}
-                    target={isExternal ? "_blank" : "_self"}
-                    className="flex flex-grow items-center gap-4 p-4 hover:bg-[#606060]"
-                    onClick={handleLinkClick}
-                  >
-                    <Icon className="h-4 w-4" />
-                    {item.label}
-                  </a>
-                </li>
-              );
+              if (isToc) {
+                return (
+                  <li key={item.href}>
+                    <a
+                      href={item.href}
+                      className="flex flex-grow items-center gap-4 p-4 hover:bg-[#606060]"
+                      onClick={handleLinkClick}
+                    >
+                      <Icon className="h-4 w-4" />
+                      {item.label}
+                    </a>
+                  </li>
+                );
+              }
+
+              if (isJoinUs) {
+                return (
+                  <li key={item.href}>
+                    <a
+                      href={item.href}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="flex flex-grow items-center justify-center gap-2 bg-[#00b0f0] p-4 transition-colors duration-300 ease-in-out hover:bg-[#71d9ff]"
+                      onClick={handleLinkClick}
+                    >
+                      {item.label}
+                      <Icon className="h-4 w-4" />
+                    </a>
+                  </li>
+                );
+              }
+
+              return null;
             })}
           </ul>
         </nav>
@@ -150,4 +196,3 @@ export default function Header({ navigationItems }: HeaderProps) {
     </header>
   );
 }
-
