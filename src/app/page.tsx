@@ -1,6 +1,7 @@
 import { DigicreLogo, MaterialSymbolsOpenInNew } from "@/components/Icon";
 import Markdown from "react-markdown";
 import Gallery from "./_components/Gallery";
+import Footer from "./_components/Footer";
 import type { Metadata } from "next";
 
 const contents = [
@@ -41,11 +42,11 @@ const contents = [
 const menu = [
   {
     title: "お知らせ (Twitter / X)",
-    href: "https://twitter.com/sitdigicre",
+    href: "https://x.com/sitdigicre",
   },
   {
     title: "入部希望の方へ",
-    href: "https://digicre.net/welcome/",
+    href: "/welcome/",
   },
 ];
 
@@ -57,53 +58,61 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="bg-sky">
-      <div className="container">
-        <section className="flex flex-col items-center gap-y-[32px] md:gap-y-[64px]">
-          <DigicreLogo className="logo" />
+    <>
+      <main className="bg-sky">
+        <div className="container">
+          <section className="flex flex-col items-center gap-y-[32px] md:gap-y-[64px]">
+            <DigicreLogo className="h-12 w-[176px] text-white md:h-24 md:w-[352px]" />
 
-          <Gallery />
-        </section>
+            <Gallery />
+          </section>
 
-        <section className="grid grid-cols-1 gap-[16px] md:grid-cols-2 md:gap-[32px]">
-          {contents.map((item) => (
-            <article
-              key={item.title}
-              className="card px-[16px] py-[32px]"
-            >
-              <h2>{item.title}</h2>
-              <Markdown>{item.body}</Markdown>
-            </article>
-          ))}
-
-          {/* <article className="card px-[16px] py-[32px]">
-            <h2>おもちゃ箱</h2>
-            <p>リロードするたびにランダムにコンテンツが切り替わります。</p>
-            <div className="aspect-video bg-gray" />
-          </article> */}
-        </section>
-
-        <nav>
-          <ul className="grid grid-cols-1 gap-[16px] md:grid-cols-2 md:gap-[32px]">
-            {menu.map((item) => (
-              <li
+          <section className="grid grid-cols-1 gap-[16px] md:grid-cols-2 md:gap-[32px]">
+            {contents.map((item) => (
+              <article
                 key={item.title}
-                className="linkBox hStack button"
+                className="card px-[16px] py-[32px]"
               >
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="linkOverlay grow"
-                >
-                  {item.title}
-                </a>
-                <MaterialSymbolsOpenInNew />
-              </li>
+                <h2>{item.title}</h2>
+                <Markdown>{item.body}</Markdown>
+              </article>
             ))}
-          </ul>
-        </nav>
-      </div>
-    </main>
+
+            {/* <article className="card px-[16px] py-[32px]">
+              <h2>おもちゃ箱</h2>
+              <p>リロードするたびにランダムにコンテンツが切り替わります。</p>
+              <div className="aspect-video bg-gray" />
+            </article> */}
+          </section>
+
+          <nav>
+            <ul className="grid grid-cols-1 gap-[16px] md:grid-cols-2 md:gap-[32px]">
+              {menu.map((item) => (
+                <li
+                  key={item.title}
+                  className="linkBox hStack button"
+                >
+                  <a
+                    href={item.href}
+                    rel={
+                      item.href.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
+                    target={item.href.startsWith("http") ? "_blank" : "_self"}
+                    className="linkOverlay grow"
+                  >
+                    {item.title}
+                  </a>
+                  <MaterialSymbolsOpenInNew />
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      </main>
+
+      <Footer />
+    </>
   );
 }

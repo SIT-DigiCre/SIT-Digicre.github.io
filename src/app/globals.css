@@ -9,7 +9,7 @@
   --font-sans:
     var(--font-inter),
     "Helvetica Neue", "Arial",
-    var(--font-noto-sans-jp),
+    "Noto Sans JP",
     "Hiragino Kaku Gothic ProN",
     "Hiragino Sans",
     "Meiryo",
@@ -17,6 +17,9 @@
 }
 
 @layer base {
+  html {
+      scroll-behavior: smooth;
+    }
   body {
     @apply font-sans;
   }
@@ -32,7 +35,7 @@
   }
 
   .logo {
-    @apply h-[48px] w-[176px] text-white md:h-[96px] md:w-[352px];
+    @apply h-[48px] w-[176px] text-white;
   }
 
   .card {
@@ -64,5 +67,13 @@
 
   .linkOverlay {
     @apply before:absolute before:inset-0 before:h-full before:w-full before:content-[""];
+  }
+
+  .body {
+    @apply flex min-h-screen flex-col lg:ml-[25%];
+  }
+
+  .body > main {
+    @apply flex-grow;
   }
 }
