@@ -288,7 +288,7 @@ export const metadata: Metadata = {
 ## 実装順序
 
 1. ✅ ドキュメント作成(このファイル)
-2. アセットファイルのコピー
+2. ✅ アセットファイルのコピー
 3. 共通コンポーネントの作成
    - `src/app/about/_components/Header.tsx`
    - `src/app/about/_components/Footer.tsx`
