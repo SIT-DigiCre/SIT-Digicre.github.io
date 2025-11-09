@@ -26,7 +26,7 @@ type SliderProps = {
 
 export default function Slider({ slides }: SliderProps) {
   return (
-    <div className="card overflow-hidden">
+    <div className="w-full overflow-hidden">
       <Splide
         options={{
           type: "slide",

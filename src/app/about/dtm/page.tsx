@@ -16,16 +16,10 @@ export default function DTMPage() {
       <Header />
       <div className="body flex min-h-screen flex-col lg:ml-[25%]">
         <main className="flex-grow">
-          {/* Home Section */}
           <section
             id="home"
-            className="bg-sky container"
+            className="bg-sky w-full"
           >
-            <div className="mb-8 text-center">
-              <h1 className="text-4xl font-bold text-white">
-                Welcome to Digicre
-              </h1>
-            </div>
             <Slider
               slides={[
                 {
@@ -48,16 +42,15 @@ export default function DTMPage() {
             />
           </section>
 
-          {/* About Section */}
           <section id="about">
-            <div className="container mx-auto px-4 py-16">
+            <div className="mx-auto px-4 py-16">
               <div className="mb-8 text-center">
                 <h2 className="mb-4 text-3xl font-bold">DTM班について</h2>
                 <div className="bg-sky mx-auto mb-8 h-1 w-24"></div>
               </div>
               <div className="mx-auto max-w-4xl">
-                <div className="card p-8">
-                  <p className="text-center">
+                <div className="p-8">
+                  <p>
                     DTM班では、主にパソコンを使った音楽制作をしています。
                     <br />
                     DTMとはDeskTop
@@ -74,9 +67,8 @@ export default function DTMPage() {
             </div>
           </section>
 
-          {/* Activity Section */}
           <section id="activity">
-            <div className="container mx-auto px-4 py-16">
+            <div className="mx-auto px-4 py-16">
               <div className="mb-8 text-center">
                 <h2 className="mb-4 text-3xl font-bold">
                   過去に開催された企画の例
@@ -84,8 +76,10 @@ export default function DTMPage() {
                 <div className="bg-sky mx-auto mb-8 h-1 w-24"></div>
               </div>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                <div className="card p-6">
-                  <h3 className="mb-4 text-xl font-bold">アレンジリレー企画</h3>
+                <div className="rounded-2xl border-2 border-black p-6">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
+                    アレンジリレー企画
+                  </h3>
                   <p>
                     既存の曲の一部をアレンジし、それを数人がリレー方式で繋いでいく企画です。
                     <br />
@@ -102,8 +96,8 @@ export default function DTMPage() {
                     2018年：少女終末旅行OP『動く、動く』、You
                   </p>
                 </div>
-                <div className="card p-6">
-                  <h3 className="mb-4 text-xl font-bold">
+                <div className="rounded-2xl border-2 border-black p-6">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
                     ミュージックアルバム企画
                   </h3>
                   <p>
@@ -164,16 +158,15 @@ export default function DTMPage() {
             </div>
           </section>
 
-          {/* Work Section */}
           <section id="work">
-            <div className="container mx-auto px-4 py-16">
+            <div className="mx-auto px-4 py-16">
               <div className="mb-8 text-center">
                 <h2 className="mb-4 text-3xl font-bold">作品例</h2>
                 <div className="bg-sky mx-auto mb-8 h-1 w-24"></div>
               </div>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                <div className="card p-6">
-                  <h3 className="mb-4 text-xl font-bold">
+                <div className="rounded-2xl border-2 border-black p-6">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
                     ・Electro Fire / Bronze
                   </h3>
                   <audio
@@ -182,8 +175,8 @@ export default function DTMPage() {
                     className="w-full"
                   ></audio>
                 </div>
-                <div className="card p-6">
-                  <h3 className="mb-4 text-xl font-bold">
+                <div className="rounded-2xl border-2 border-black p-6">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
                     ・Oh future / teikume
                   </h3>
                   <audio
@@ -192,8 +185,8 @@ export default function DTMPage() {
                     className="w-full"
                   ></audio>
                 </div>
-                <div className="card p-6">
-                  <h3 className="mb-4 text-xl font-bold">
+                <div className="rounded-2xl border-2 border-black p-6">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
                     ・breakthrough / Kunitochi
                   </h3>
                   <audio
@@ -202,8 +195,8 @@ export default function DTMPage() {
                     className="w-full"
                   ></audio>
                 </div>
-                <div className="card p-6">
-                  <h3 className="mb-4 text-xl font-bold">
+                <div className="rounded-2xl border-2 border-black p-6">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
                     ・What-s Today-s New Knowledge / Pinyo
                   </h3>
                   <audio

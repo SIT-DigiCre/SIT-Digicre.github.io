@@ -16,16 +16,10 @@ export default function SysDevPage() {
       <Header />
       <div className="body flex min-h-screen flex-col lg:ml-[25%]">
         <main className="flex-grow">
-          {/* Home Section */}
           <section
             id="home"
-            className="bg-sky container"
+            className="bg-sky w-full"
           >
-            <div className="mb-8 text-center">
-              <h1 className="text-4xl font-bold text-white">
-                Welcome to Digicre
-              </h1>
-            </div>
             <Slider
               slides={[
                 {
@@ -37,9 +31,8 @@ export default function SysDevPage() {
             />
           </section>
 
-          {/* About Section */}
           <section id="about">
-            <div className="container mx-auto px-4 py-16">
+            <div className="mx-auto px-4 py-16">
               <div className="mb-8 text-center">
                 <h2 className="mb-4 text-3xl font-bold">
                   SystemDevelopment班について
@@ -47,8 +40,8 @@ export default function SysDevPage() {
                 <div className="bg-sky mx-auto mb-8 h-1 w-24"></div>
               </div>
               <div className="mx-auto max-w-4xl">
-                <div className="card p-8">
-                  <p className="text-center">
+                <div className="p-8">
+                  <p>
                     SystemDevelopment班はデジクリでの創作活動や運営をサポートするシステムを開発する集団です。
                     <br />
                     主に、デジクリ用グループウェア「デジコア」やホームページなどのWebページ
@@ -63,16 +56,17 @@ export default function SysDevPage() {
             </div>
           </section>
 
-          {/* Activity Section */}
           <section id="activity">
-            <div className="container mx-auto px-4 py-16">
+            <div className="mx-auto px-4 py-16">
               <div className="mb-8 text-center">
                 <h2 className="mb-4 text-3xl font-bold">開発の例</h2>
                 <div className="bg-sky mx-auto mb-8 h-1 w-24"></div>
               </div>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                <div className="card p-6">
-                  <h3 className="mb-4 text-xl font-bold">デジコア</h3>
+                <div className="rounded-2xl border-2 border-black p-6">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
+                    デジコア
+                  </h3>
                   <p>
                     企業などで利用されるグループウェアをデジクリ向けに1から開発しました。入部・継続管理やイベントフォーム、作品投稿などができます。
                     <br />
@@ -87,8 +81,8 @@ export default function SysDevPage() {
                     にてOSSで公開中です。
                   </p>
                 </div>
-                <div className="card p-6">
-                  <h3 className="mb-4 text-xl font-bold">Bolide</h3>
+                <div className="rounded-2xl border-2 border-black p-6">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">Bolide</h3>
                   <p>
                     Zoomなどを使用する際にニコニコ動画風に匿名コメントをデスクトップに流すことができるソフトウェアです。
                     <br />

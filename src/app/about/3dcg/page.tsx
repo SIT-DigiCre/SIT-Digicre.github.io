@@ -16,16 +16,10 @@ export default function ThreeDCGPage() {
       <Header />
       <div className="body flex min-h-screen flex-col lg:ml-[25%]">
         <main className="flex-grow">
-          {/* Home Section */}
           <section
             id="home"
-            className="bg-sky container"
+            className="bg-sky w-full"
           >
-            <div className="mb-8 text-center">
-              <h1 className="text-4xl font-bold text-white">
-                Welcome to Digicre
-              </h1>
-            </div>
             <Slider
               slides={[
                 {
@@ -61,16 +55,15 @@ export default function ThreeDCGPage() {
             />
           </section>
 
-          {/* About Section */}
           <section id="about">
-            <div className="container mx-auto px-4 py-16">
+            <div className="mx-auto px-4 py-16">
               <div className="mb-8 text-center">
                 <h2 className="mb-4 text-3xl font-bold">3DCG班について</h2>
                 <div className="bg-sky mx-auto mb-8 h-1 w-24"></div>
               </div>
               <div className="mx-auto max-w-4xl">
-                <div className="card p-8">
-                  <p className="text-center">
+                <div className="p-8">
+                  <p>
                     3DCG班の活動には、個人でモデリング自体を楽しむ、企画に参加してサークルオリジナルのVtuberやゲームキャラクターなどのモデルの制作をする、3DCG動画に使うモデル作成をするなどがあります。
                     <br />
                     3DCG班個人製作は半年に一度の最終発表に向けて活動しています。キャラクター、動画の背景、車、身の回りの物など各々の好きなものを作っています。
@@ -90,24 +83,25 @@ export default function ThreeDCGPage() {
             </div>
           </section>
 
-          {/* Activity Section */}
           <section id="activity">
-            <div className="container mx-auto px-4 py-16">
+            <div className="mx-auto px-4 py-16">
               <div className="mb-8 text-center">
                 <h2 className="mb-4 text-3xl font-bold">企画の例</h2>
                 <div className="bg-sky mx-auto mb-8 h-1 w-24"></div>
               </div>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                <div className="card p-6">
-                  <h3 className="mb-4 text-xl font-bold">定期3DCG企画</h3>
+                <div className="rounded-2xl border-2 border-black p-6">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
+                    定期3DCG企画
+                  </h3>
                   <p>
                     お題なしで自由に制作します。
                     <br />
                     モデル、一枚絵、動画などを制作し、最終発表までに自分の作りたいものを作りましょう。
                   </p>
                 </div>
-                <div className="card p-6">
-                  <h3 className="mb-4 text-xl font-bold">
+                <div className="rounded-2xl border-2 border-black p-6">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
                     クソダサグランプリ企画
                   </h3>
                   <p>
@@ -122,22 +116,21 @@ export default function ThreeDCGPage() {
             </div>
           </section>
 
-          {/* Work Section */}
           <section id="work">
-            <div className="container mx-auto px-4 py-16">
+            <div className="mx-auto px-4 py-16">
               <div className="mb-8 text-center">
                 <h2 className="mb-4 text-3xl font-bold">作品例</h2>
                 <div className="bg-sky mx-auto mb-8 h-1 w-24"></div>
               </div>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                <div className="card p-6">
+                <div className="rounded-2xl border-2 border-black p-6">
                   <img
                     src="/about/img/3dcg/credit_bread.png"
                     alt=""
                     className="w-full rounded-lg"
                   />
                 </div>
-                <div className="card p-6">
+                <div className="rounded-2xl border-2 border-black p-6">
                   <img
                     src="/about/img/3dcg/digico_preview.jpg"
                     alt=""

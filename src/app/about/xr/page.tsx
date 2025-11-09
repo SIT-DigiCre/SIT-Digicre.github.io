@@ -16,16 +16,10 @@ export default function XRPage() {
       <Header />
       <div className="body flex min-h-screen flex-col lg:ml-[25%]">
         <main className="flex-grow">
-          {/* Home Section */}
           <section
             id="home"
-            className="bg-sky container"
+            className="bg-sky w-full"
           >
-            <div className="mb-8 text-center">
-              <h1 className="text-4xl font-bold text-white">
-                Welcome to Digicre
-              </h1>
-            </div>
             <Slider
               slides={[
                 {
@@ -44,16 +38,15 @@ export default function XRPage() {
             />
           </section>
 
-          {/* About Section */}
           <section id="about">
-            <div className="container mx-auto px-4 py-16">
+            <div className="mx-auto px-4 py-16">
               <div className="mb-8 text-center">
                 <h2 className="mb-4 text-3xl font-bold">xR班について</h2>
                 <div className="bg-sky mx-auto mb-8 h-1 w-24"></div>
               </div>
               <div className="mx-auto max-w-4xl">
-                <div className="card p-8">
-                  <p className="text-center">
+                <div className="p-8">
+                  <p>
                     xR班では、主に仮想世界に関わるコンテンツを制作しています。
                     <br />
                     xRとは、VR・AR・MRなど「～R」と呼ばれる技術をまとめた名称で、現実世界と仮想世界を融合させる技術を指します。
@@ -97,9 +90,8 @@ export default function XRPage() {
             </div>
           </section>
 
-          {/* Activity Section */}
           <section id="activity">
-            <div className="container mx-auto px-4 py-16">
+            <div className="mx-auto px-4 py-16">
               <div className="mb-8 text-center">
                 <h2 className="mb-4 text-3xl font-bold">
                   現在進行している企画の例
@@ -107,8 +99,10 @@ export default function XRPage() {
                 <div className="bg-sky mx-auto mb-8 h-1 w-24"></div>
               </div>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                <div className="card p-6">
-                  <h3 className="mb-4 text-xl font-bold">VTuber企画</h3>
+                <div className="rounded-2xl border-2 border-black p-6">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
+                    VTuber企画
+                  </h3>
                   <p>
                     デジクリのオリジナルキャラクター「デジコ」を用いてVTuberを始めました。
                     <br />
@@ -131,8 +125,10 @@ export default function XRPage() {
                     </a>
                   </p>
                 </div>
-                <div className="card p-6">
-                  <h3 className="mb-4 text-xl font-bold">Fleet VR企画</h3>
+                <div className="rounded-2xl border-2 border-black p-6">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
+                    Fleet VR企画
+                  </h3>
                   <p>
                     VR向けゲーム開発企画。スタイリッシュ海戦シューティングゲームを目指して現在進行中。
                   </p>

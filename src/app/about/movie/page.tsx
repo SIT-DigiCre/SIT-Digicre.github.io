@@ -16,16 +16,10 @@ export default function MoviePage() {
       <Header />
       <div className="body flex min-h-screen flex-col lg:ml-[25%]">
         <main className="flex-grow">
-          {/* Home Section */}
           <section
             id="home"
-            className="bg-sky container"
+            className="bg-sky w-full"
           >
-            <div className="mb-8 text-center">
-              <h1 className="text-4xl font-bold text-white">
-                Welcome to Digicre
-              </h1>
-            </div>
             <Slider
               slides={[
                 {
@@ -36,16 +30,15 @@ export default function MoviePage() {
             />
           </section>
 
-          {/* About Section */}
           <section id="about">
-            <div className="container mx-auto px-4 py-16">
+            <div className="mx-auto px-4 py-16">
               <div className="mb-8 text-center">
                 <h2 className="mb-4 text-3xl font-bold">Movie班について</h2>
                 <div className="bg-sky mx-auto mb-8 h-1 w-24"></div>
               </div>
               <div className="mx-auto max-w-4xl">
-                <div className="card p-8">
-                  <p className="text-center">
+                <div className="p-8">
+                  <p>
                     Movie班では、主に動画をつくる人が集まっています。
                     <br />
                     詳しく言うと、動画編集から、MAD、モーショングラフィックス、3DCGなどいろいろな人がいろいろな映像を作っています。
@@ -60,9 +53,8 @@ export default function MoviePage() {
             </div>
           </section>
 
-          {/* Activity Section */}
           <section id="activity">
-            <div className="container mx-auto px-4 py-16">
+            <div className="mx-auto px-4 py-16">
               <div className="mb-8 text-center">
                 <h2 className="mb-4 text-3xl font-bold">
                   過去に開催された企画の例
@@ -70,12 +62,14 @@ export default function MoviePage() {
                 <div className="bg-sky mx-auto mb-8 h-1 w-24"></div>
               </div>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                <div className="card p-6">
-                  <h3 className="mb-4 text-xl font-bold">ムビクリ(仮)</h3>
+                <div className="rounded-2xl border-2 border-black p-6">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
+                    ムビクリ(仮)
+                  </h3>
                   <p>1つお題曲を決めて、それに各々が映像をつくるという企画</p>
                 </div>
-                <div className="card p-6">
-                  <h3 className="mb-4 text-xl font-bold">
+                <div className="rounded-2xl border-2 border-black p-6">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
                     サークル紹介動画の作成
                   </h3>
                   <p>

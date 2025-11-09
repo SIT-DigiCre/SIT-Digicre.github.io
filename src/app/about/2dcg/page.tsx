@@ -16,16 +16,10 @@ export default function TwoDCGPage() {
       <Header />
       <div className="body flex min-h-screen flex-col lg:ml-[25%]">
         <main className="flex-grow">
-          {/* Home Section */}
           <section
             id="home"
-            className="bg-sky container"
+            className="bg-sky w-full"
           >
-            <div className="mb-8 text-center">
-              <h1 className="text-4xl font-bold text-white">
-                Welcome to Digicre
-              </h1>
-            </div>
             <Slider
               slides={[
                 {
@@ -47,16 +41,15 @@ export default function TwoDCGPage() {
             />
           </section>
 
-          {/* About Section */}
           <section id="about">
-            <div className="container mx-auto px-4 py-16">
+            <div className="mx-auto px-4 py-16">
               <div className="mb-8 text-center">
                 <h2 className="mb-4 text-3xl font-bold">イラスト班について</h2>
                 <div className="bg-sky mx-auto mb-8 h-1 w-24"></div>
               </div>
               <div className="mx-auto max-w-4xl">
-                <div className="card p-8">
-                  <p className="text-center">
+                <div className="p-8">
+                  <p>
                     イラスト班では、主にパソコンやタブレットなどを使ったデジタルイラストの制作をしています。
                     <br />
                     デジタルイラストは、文字通りデジタルで描くイラストのことで、加工や編集が容易なことに加え、様々な表現の幅を持っています。
@@ -72,22 +65,23 @@ export default function TwoDCGPage() {
             </div>
           </section>
 
-          {/* Activity Section */}
           <section id="activity">
-            <div className="container mx-auto px-4 py-16">
+            <div className="mx-auto px-4 py-16">
               <div className="mb-8 text-center">
                 <h2 className="mb-4 text-3xl font-bold">集団製作の例</h2>
                 <div className="bg-sky mx-auto mb-8 h-1 w-24"></div>
               </div>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                <div className="card p-6">
-                  <h3 className="mb-4 text-xl font-bold">リレーマンガ企画</h3>
+                <div className="rounded-2xl border-2 border-black p-6">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
+                    リレーマンガ企画
+                  </h3>
                   <p>
                     事前の打ち合わせ無しで、一人一人が一コマずつ描き、マンガを完成させる企画です。
                   </p>
                 </div>
-                <div className="card p-6">
-                  <h3 className="mb-4 text-xl font-bold">
+                <div className="rounded-2xl border-2 border-black p-6">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
                     DigicreGraphicWorks
                   </h3>
                   <p>
@@ -100,17 +94,16 @@ export default function TwoDCGPage() {
             </div>
           </section>
 
-          {/* Work Section */}
           <section id="work">
-            <div className="container mx-auto px-4 py-16">
+            <div className="mx-auto px-4 py-16">
               <div className="mb-8 text-center">
                 <h2 className="mb-4 text-3xl font-bold">作品例</h2>
                 <div className="bg-sky mx-auto mb-8 h-1 w-24"></div>
               </div>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                <div className="card p-6">
+                <div className="rounded-2xl border-2 border-black p-6">
                   {/*アップルパイやべぇ、すこ*/}
-                  <h3 className="mb-4 text-xl font-bold">
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
                     あーくないつのウィーディです！！！！！！！！！！！！！！！！
                   </h3>
                   <img
@@ -119,9 +112,11 @@ export default function TwoDCGPage() {
                     className="w-full rounded-lg"
                   />
                 </div>
-                <div className="card p-6">
+                <div className="rounded-2xl border-2 border-black p-6">
                   {/*くもこかわいい！かわいい！*/}
-                  <h3 className="mb-4 text-xl font-bold">蜘蛛子☁</h3>
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">
+                    蜘蛛子☁
+                  </h3>
                   <img
                     src="/about/img/2dcg/kumoko.png"
                     alt=""
