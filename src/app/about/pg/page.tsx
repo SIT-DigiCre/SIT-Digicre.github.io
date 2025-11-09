@@ -57,26 +57,44 @@ export default function PGPage() {
           <section id="activity">
             <div className="mx-auto px-4 py-16">
               <div className="mb-8 text-center">
-                <h2 className="mb-4 text-3xl font-bold">集団開発の例</h2>
+                <h2 className="mb-4 text-3xl font-bold">開発の例</h2>
                 <div className="bg-sky mx-auto mb-8 h-1 w-24"></div>
               </div>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                 <div className="rounded-2xl border-2 border-black p-6">
                   <h3 className="black mt-0 mb-4 text-xl font-bold">
-                    RemakeRPG
+                    デジコア
                   </h3>
                   <p>
-                    ペイントアクションを使ったアクションRPGです。
+                    企業などで利用されるグループウェアをデジクリ向けに1から開発しました。入部・継続管理やイベントフォーム、作品投稿などができます。
                     <br />
-                    デジゲー博2019に展示しました。
+                    <a
+                      href="https://github.com/SIT-DigiCre/digicore_v3_frontend"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue underline"
+                    >
+                      GitHub
+                    </a>
+                    にてOSSで公開中です。
                   </p>
                 </div>
                 <div className="rounded-2xl border-2 border-black p-6">
-                  <h3 className="black mt-0 mb-4 text-xl font-bold">
-                    Fleet VR企画
-                  </h3>
+                  <h3 className="black mt-0 mb-4 text-xl font-bold">Bolide</h3>
                   <p>
-                    VR向けゲーム開発企画。Quest2向け擬人化海戦シューティングゲーム。デジゲー博2022にて展示。
+                    Zoomなどを使用する際にニコニコ動画風に匿名コメントをデスクトップに流すことができるソフトウェアです。
+                    <br />
+                    定例会などで使用しています。
+                    <br />
+                    <a
+                      href="https://github.com/SIT-DigiCre/bolide"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue underline"
+                    >
+                      GitHub
+                    </a>
+                    にてOSSで公開中です。
                   </p>
                 </div>
               </div>
