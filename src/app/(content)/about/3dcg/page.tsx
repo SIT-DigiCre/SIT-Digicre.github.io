@@ -128,7 +128,7 @@ export default function ThreeDCGPage() {
             </div>
             <div className="rounded-2xl border-2 border-black p-6">
               <img
-                src="/about/img/3dcg/digico_preview.jpg"
+                src="/about/img/3dcg/digico_preview.webp"
                 alt=""
                 className="w-full rounded-lg"
               />
