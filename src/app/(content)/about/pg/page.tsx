@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Slider from "../_components/Slider";
-import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "PG班 - デジクリ",
@@ -21,7 +20,7 @@ export default function PGPage() {
           slides={[
             {
               type: "image",
-              src: "/about/img/pg.jpg",
+              src: "/about/img/pg.webp",
               alt: "",
             },
           ]}

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Slider from "../_components/Slider";
-import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "3DCG班 - デジクリ",
@@ -21,27 +20,27 @@ export default function ThreeDCGPage() {
           slides={[
             {
               type: "image",
-              src: "/about/img/3dcg/digico-appearance.png",
+              src: "/about/img/3dcg/digico-appearance.webp",
               alt: "",
             },
             {
               type: "image",
-              src: "/about/img/3dcg/digico-appearance-making.png",
+              src: "/about/img/3dcg/digico-appearance-making.webp",
               alt: "",
             },
             {
               type: "image",
-              src: "/about/img/3dcg/3dcg-hobocube.png",
+              src: "/about/img/3dcg/3dcg-hobocube.webp",
               alt: "",
             },
             {
               type: "image",
-              src: "/about/img/3dcg/maya_akizuki.png",
+              src: "/about/img/3dcg/maya_akizuki.webp",
               alt: "",
             },
             {
               type: "image",
-              src: "/about/img/3dcg/dustbox2.png",
+              src: "/about/img/3dcg/dustbox2.webp",
               alt: "",
             },
             {
@@ -122,7 +121,7 @@ export default function ThreeDCGPage() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="rounded-2xl border-2 border-black p-6">
               <img
-                src="/about/img/3dcg/credit_bread.png"
+                src="/about/img/3dcg/credit_bread.webp"
                 alt=""
                 className="w-full rounded-lg"
               />

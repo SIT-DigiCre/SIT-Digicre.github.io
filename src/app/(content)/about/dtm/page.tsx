@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Slider from "../_components/Slider";
-import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "DTM班 - デジクリ",
@@ -167,7 +166,7 @@ export default function DTMPage() {
                 ・Electro Fire / Bronze
               </h3>
               <audio
-                src="/about/audio/Electro Fire.mp3"
+                src="/about/audio/electro-fire.mp3"
                 controls
                 className="w-full"
               ></audio>
@@ -177,7 +176,7 @@ export default function DTMPage() {
                 ・Oh future / teikume
               </h3>
               <audio
-                src="/about/audio/oh,future.mp3"
+                src="/about/audio/oh-future.mp3"
                 controls
                 className="w-full"
               ></audio>
@@ -197,7 +196,7 @@ export default function DTMPage() {
                 ・What-s Today-s New Knowledge / Pinyo
               </h3>
               <audio
-                src="/about/audio/What-s Today-s New Knowledge_8bit.mp3"
+                src="/about/audio/whats-todays-new-knowledge.mp3"
                 controls
                 className="w-full"
               ></audio>

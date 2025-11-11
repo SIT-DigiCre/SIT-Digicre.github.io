@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Slider from "../_components/Slider";
-import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "イラスト班 - デジクリ",
@@ -21,17 +20,17 @@ export default function TwoDCGPage() {
           slides={[
             {
               type: "image",
-              src: "/about/img/2dcg/kawaii.png",
+              src: "/about/img/2dcg/kawaii.webp",
               alt: "",
             },
             {
               type: "image",
-              src: "/about/img/2dcg/buff_zavas.png",
+              src: "/about/img/2dcg/buff_zavas.webp",
               alt: "",
             },
             {
               type: "image",
-              src: "/about/img/2dcg/syawa5-7-3.png",
+              src: "/about/img/2dcg/syawa5-7-3.webp",
               alt: "",
             },
           ]}
@@ -104,7 +103,7 @@ export default function TwoDCGPage() {
                 あーくないつのウィーディです！！！！！！！！！！！！！！！！
               </h3>
               <img
-                src="/about/img/2dcg/arknights.png"
+                src="/about/img/2dcg/arknights.webp"
                 alt=""
                 className="w-full rounded-lg"
               />
@@ -113,7 +112,7 @@ export default function TwoDCGPage() {
               {/*くもこかわいい！かわいい！*/}
               <h3 className="black mt-0 mb-4 text-xl font-bold">蜘蛛子☁</h3>
               <img
-                src="/about/img/2dcg/kumoko.png"
+                src="/about/img/2dcg/kumoko.webp"
                 alt=""
                 className="w-full rounded-lg"
               />
