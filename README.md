@@ -1,8 +1,14 @@
-デジクリのプロモーションサイト [digicre.net](https://digicre.net/) の リポジトリです。
+# digicre.net
+
+デジクリの公式ウェブサイト [digicre.net](https://digicre.net/) の リポジトリです。
 
 ## 開発方法
 
 パッケージマネージャーにpnpmを使用しています。
+
+```bash
+pnpm install
+```
 
 ```bash
 pnpm dev
