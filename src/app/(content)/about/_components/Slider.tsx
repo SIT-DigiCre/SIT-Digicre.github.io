@@ -49,7 +49,7 @@ export default function Slider({ slides }: SliderProps) {
                 <img
                   src={slide.src}
                   alt={slide.alt}
-                  className="aspect-video object-cover"
+                  className="aspect-video w-full object-cover"
                 />
               </SplideSlide>
             );

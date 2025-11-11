@@ -21,12 +21,12 @@ export default function ThreeDCGPage() {
           slides={[
             {
               type: "image",
-              src: "/about/img/3dcg/デジコ登場.png",
+              src: "/about/img/3dcg/digico-appearance.png",
               alt: "",
             },
             {
               type: "image",
-              src: "/about/img/3dcg/デジコ登場メイキング.png",
+              src: "/about/img/3dcg/digico-appearance-making.png",
               alt: "",
             },
             {
