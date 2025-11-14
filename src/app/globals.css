@@ -18,8 +18,9 @@
 
 @layer base {
   html {
-      scroll-behavior: smooth;
-    }
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply font-sans;
   }
@@ -41,20 +42,33 @@
   .card {
     @apply w-full rounded-[16px] border-2 border-solid border-gray bg-white;
   }
+
   .card h2 {
     @apply mb-[24px] text-center text-2xl/[1.5] font-bold tracking-[0.125em] text-[#0C5AE9];
   }
+
   .card h3 {
     @apply mb-[24px] mt-[40px] text-xl/[1.5] font-bold text-[#0C5AE9];
   }
+
   .card p {
     @apply mb-[16px] text-base/[1.75] last:mb-0;
   }
+
+  .card ul {
+    @apply ml-[2rem] list-disc;
+  }
+
   .card ol {
     @apply ml-[2rem] list-decimal;
   }
+
   .card li {
     @apply text-base/[1.75];
+  }
+
+  .card a:any-link {
+    @apply text-[#0C5AE9] underline;
   }
 
   .button {
@@ -73,7 +87,7 @@
     @apply flex min-h-screen flex-col lg:ml-[25%];
   }
 
-  .body > main {
+  .body>main {
     @apply flex-grow;
   }
 }
