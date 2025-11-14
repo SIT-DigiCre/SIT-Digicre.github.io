@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "プライバシーポリシー - 芝浦工業大学 デジクリ",
   openGraph: {
     type: "website",
-    url: "https://digicre.net/privac-policy/",
+    url: "https://digicre.net/privacy-policy/",
     title: "プライバシーポリシー",
     siteName: "芝浦工業大学 デジクリ",
     images: [
