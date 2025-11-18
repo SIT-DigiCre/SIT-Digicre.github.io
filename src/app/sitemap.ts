@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { teams } from "./(content)/welcome/_components/TeamsSection";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const teamPages: MetadataRoute.Sitemap = teams.map((team) => ({
     url: `https://digicre.net/about/${team.href}`,
