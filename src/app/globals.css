@@ -28,7 +28,7 @@
 
 @layer utilities {
   .container {
-    @apply mx-auto flex max-w-[1280px] flex-col gap-y-[64px] px-[16px] py-[64px] md:gap-y-[128px] md:px-[64px] md:py-[128px] xl:gap-y-[128px] xl:px-[128px] xl:py-[128px];
+    @apply mx-auto flex max-w-[1280px] flex-col gap-y-[64px] px-[16px] py-[64px] md:gap-y-[128px] md:px-[64px] md:py-[128px] xl:gap-y-[128px] xl:px-[96px] xl:py-[128px];
   }
 
   .hStack {
