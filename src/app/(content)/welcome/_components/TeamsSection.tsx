@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MaterialSymbolsOpenInNew } from "@/components/Icon";
 
-const teams = [
+export const teams = [
   {
     title: "PG 班",
     image: "/welcome/teams/pg.webp",
