@@ -38,7 +38,7 @@ export default function Gallery() {
             <img
               src={item.src}
               alt={item.alt}
-              className="aspect-video object-cover"
+              className="aspect-video w-full object-cover"
             />
           </SplideSlide>
         ))}
@@ -47,7 +47,7 @@ export default function Gallery() {
           <img
             src="/img/pv.webp"
             alt="デジクリ紹介PV 2024 【芝浦工業大学公認サークル】"
-            className="aspect-video object-cover"
+            className="aspect-video w-full object-cover"
           />
         </SplideSlide>
       </Splide>

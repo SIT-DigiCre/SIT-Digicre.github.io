@@ -1,6 +1,5 @@
 import {
   DigicreLogo,
-  MaterialSymbolsArticle,
   MaterialSymbolsInfo,
   MaterialSymbolsLogin,
   MaterialSymbolsMail,
@@ -52,15 +51,25 @@ const menuList = [
     title: "お問い合わせ",
     href: "mailto:contact@digicre.net",
   },
+  // {
+  //   icon: (
+  //     <MaterialSymbolsArticle
+  //       className="h-[1.5rem] w-[1.5rem]"
+  //       aria-hidden
+  //     />
+  //   ),
+  //   title: "デジコアブログ",
+  //   href: "https://blog.digicre.net/",
+  // },
   {
     icon: (
-      <MaterialSymbolsArticle
+      <MaterialSymbolsInfo
         className="h-[1.5rem] w-[1.5rem]"
         aria-hidden
       />
     ),
-    title: "デジコアブログ",
-    href: "https://blog.digicre.net/",
+    title: "プライバシーポリシー",
+    href: "/privacy-policy/",
   },
   {
     icon: (
