@@ -6,12 +6,7 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": [
-      "**",
-      "!.next",
-      "!node_modules",
-      "!out"
-    ]
+    "includes": ["**", "!.next", "!node_modules", "!out"]
   },
   "formatter": {
     "enabled": true,

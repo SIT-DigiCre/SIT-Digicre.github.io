@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Hero from "./_components/Hero";
 import AboutSection from "./_components/AboutSection";
-import TeamsSection from "./_components/TeamsSection";
 import FaqSection from "./_components/FaqSection";
+import Hero from "./_components/Hero";
 import JoinSection from "./_components/JoinSection";
+import TeamsSection from "./_components/TeamsSection";
 
 export const metadata: Metadata = {
   title: "デジクリの紹介 - 芝浦工業大学 デジクリ",

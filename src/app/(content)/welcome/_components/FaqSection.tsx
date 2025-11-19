@@ -140,20 +140,14 @@ const faqs = [
 
 export default function FaqSection() {
   return (
-    <div
-      className="bg-[#e9e9e9] p-8 text-black"
-      id="faq"
-    >
+    <div className="bg-[#e9e9e9] p-8 text-black" id="faq">
       <h2 className="mb-8 text-2xl leading-tight font-bold tracking-normal [font-feature-settings:'palt'] md:text-3xl">
         よくある質問
       </h2>
 
       <div className="grid gap-8">
         {faqs.map((faq) => (
-          <article
-            key={faq.question}
-            className="rounded-2xl bg-white p-8"
-          >
+          <article key={faq.question} className="rounded-2xl bg-white p-8">
             <h3 className="mb-4 text-lg leading-tight font-bold tracking-normal [font-feature-settings:'palt'] lg:text-2xl">
               {faq.question}
             </h3>

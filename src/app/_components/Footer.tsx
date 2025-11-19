@@ -12,42 +12,22 @@ import {
 
 const menuList = [
   {
-    icon: (
-      <SimpleIconsX
-        className="h-[1.5rem] w-[1.5rem]"
-        aria-hidden
-      />
-    ),
+    icon: <SimpleIconsX className="h-[1.5rem] w-[1.5rem]" aria-hidden />,
     title: "X (Twitter)",
     href: "https://x.com/sitdigicre",
   },
   {
-    icon: (
-      <SimpleIconsYoutube
-        className="h-[1.5rem] w-[1.5rem]"
-        aria-hidden
-      />
-    ),
+    icon: <SimpleIconsYoutube className="h-[1.5rem] w-[1.5rem]" aria-hidden />,
     title: "YouTube",
     href: "https://www.youtube.com/@sitdigicre",
   },
   {
-    icon: (
-      <SimpleIconsGithub
-        className="h-[1.5rem] w-[1.5rem]"
-        aria-hidden
-      />
-    ),
+    icon: <SimpleIconsGithub className="h-[1.5rem] w-[1.5rem]" aria-hidden />,
     title: "GitHub",
     href: "https://github.com/SIT-DigiCre",
   },
   {
-    icon: (
-      <MaterialSymbolsMail
-        className="h-[1.5rem] w-[1.5rem]"
-        aria-hidden
-      />
-    ),
+    icon: <MaterialSymbolsMail className="h-[1.5rem] w-[1.5rem]" aria-hidden />,
     title: "お問い合わせ",
     href: "mailto:contact@digicre.net",
   },
@@ -62,41 +42,25 @@ const menuList = [
   //   href: "https://blog.digicre.net/",
   // },
   {
-    icon: (
-      <MaterialSymbolsInfo
-        className="h-[1.5rem] w-[1.5rem]"
-        aria-hidden
-      />
-    ),
+    icon: <MaterialSymbolsInfo className="h-[1.5rem] w-[1.5rem]" aria-hidden />,
     title: "プライバシーポリシー",
     href: "/privacy-policy/",
   },
   {
     icon: (
-      <MaterialSymbolsLogin
-        className="h-[1.5rem] w-[1.5rem]"
-        aria-hidden
-      />
+      <MaterialSymbolsLogin className="h-[1.5rem] w-[1.5rem]" aria-hidden />
     ),
     title: "デジコア",
     href: "https://core3.digicre.net/",
   },
   {
-    icon: (
-      <MaterialSymbolsInfo
-        className="h-[1.5rem] w-[1.5rem]"
-        aria-hidden
-      />
-    ),
+    icon: <MaterialSymbolsInfo className="h-[1.5rem] w-[1.5rem]" aria-hidden />,
     title: "入部希望の方へ",
     href: "/welcome/",
   },
   {
     icon: (
-      <MaterialSymbolsSchool
-        className="h-[1.5rem] w-[1.5rem]"
-        aria-hidden
-      />
+      <MaterialSymbolsSchool className="h-[1.5rem] w-[1.5rem]" aria-hidden />
     ),
     title: "芝浦工業大学",
     href: "https://www.shibaura-it.ac.jp/",
@@ -112,10 +76,7 @@ export default function Footer() {
 
           <ul className="border-gray bg-gray grid w-full grid-cols-1 gap-[2px] overflow-hidden rounded-2xl border-2 border-solid md:grid-cols-2 xl:grid-cols-4">
             {menuList.map((item) => (
-              <li
-                key={item.title}
-                className="linkBox hStack bg-white p-[16px]"
-              >
+              <li key={item.title} className="linkBox hStack bg-white p-[16px]">
                 {item.icon}
                 <a
                   href={item.href}

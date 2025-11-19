@@ -12,10 +12,7 @@ export const metadata: Metadata = {
 export default function TwoDCGPage() {
   return (
     <main className="flex-grow">
-      <section
-        id="home"
-        className="bg-sky w-full"
-      >
+      <section id="home" className="bg-sky w-full">
         <Slider
           slides={[
             {
