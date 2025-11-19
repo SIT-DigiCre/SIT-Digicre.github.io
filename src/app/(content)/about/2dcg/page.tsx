@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Slider from "../_components/Slider";
 
 export const metadata: Metadata = {
@@ -99,18 +100,24 @@ export default function TwoDCGPage() {
               <h3 className="black mt-0 mb-4 text-xl font-bold">
                 あーくないつのウィーディです！！！！！！！！！！！！！！！！
               </h3>
-              <img
+              <Image
                 src="/about/img/2dcg/arknights.webp"
                 alt=""
+                loading="lazy"
+                width={1379}
+                height={2000}
                 className="w-full rounded-lg"
               />
             </div>
             <div className="rounded-2xl border-2 border-black p-6">
               {/*くもこかわいい！かわいい！*/}
               <h3 className="black mt-0 mb-4 text-xl font-bold">蜘蛛子☁</h3>
-              <img
+              <Image
                 src="/about/img/2dcg/kumoko.webp"
                 alt=""
+                loading="lazy"
+                width={750}
+                height={755}
                 className="w-full rounded-lg"
               />
             </div>

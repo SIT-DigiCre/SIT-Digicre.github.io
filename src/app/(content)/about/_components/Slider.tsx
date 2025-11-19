@@ -4,6 +4,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { Video } from "@splidejs/splide-extension-video";
 import "@splidejs/splide-extension-video/dist/css/splide-extension-video.min.css";
+import Image from "next/image";
 
 type ImageSlide = {
   type: "image";
@@ -45,8 +46,12 @@ export default function Slider({ slides }: SliderProps) {
         {slides.map((slide, index) => {
           if (slide.type === "image") {
             return (
-              <SplideSlide key={`${slide.src}-${index}`}>
-                <img
+              <SplideSlide
+                key={`${slide.src}-${index}`}
+                className="aspect-video w-full"
+              >
+                <Image
+                  fill
                   src={slide.src}
                   alt={slide.alt}
                   className="aspect-video w-full object-cover"
@@ -74,8 +79,10 @@ export default function Slider({ slides }: SliderProps) {
               <SplideSlide
                 key={`${slide.url}-${index}`}
                 data-splide-youtube={`https://www.youtube.com/watch?v=${youtubeId}&autoplay=1`}
+                className="aspect-video w-full"
               >
-                <img
+                <Image
+                  fill
                   src={thumbnailUrl}
                   alt={slide.alt || "YouTube動画"}
                   className="aspect-video object-cover"

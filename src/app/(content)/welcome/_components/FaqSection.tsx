@@ -58,12 +58,10 @@ const faqs = [
             </tr>
           </thead>
           <tbody>
-            {memberTableData.map((row) => (
+            {memberTableData.map((row, i) => (
               <tr
                 key={row.year}
-                className={
-                  parseInt(row.year) % 2 === 0 ? "bg-white" : "bg-[#e9e9e9]"
-                }
+                className={i % 2 === 0 ? "bg-white" : "bg-[#e9e9e9]"}
               >
                 <td className="border border-[#404040] p-4 text-center">
                   {row.year}

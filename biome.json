@@ -27,6 +27,9 @@
             "style": "separatedType"
           }
         }
+      },
+      "a11y": {
+        "useMediaCaption": "off"
       }
     }
   },
