@@ -1,6 +1,6 @@
-import { DigicreLogo } from "@/components/Icon";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { DigicreLogo } from "@/components/Icon";
 import Footer from "../_components/Footer";
 
 export const metadata: Metadata = {

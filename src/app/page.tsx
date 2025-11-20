@@ -1,8 +1,8 @@
-import { DigicreLogo, MaterialSymbolsOpenInNew } from "@/components/Icon";
-import Markdown from "react-markdown";
-import Gallery from "./_components/Gallery";
-import Footer from "./_components/Footer";
 import type { Metadata } from "next";
+import Markdown from "react-markdown";
+import { DigicreLogo, MaterialSymbolsOpenInNew } from "@/components/Icon";
+import Footer from "./_components/Footer";
+import Gallery from "./_components/Gallery";
 
 const contents = [
   {
@@ -69,10 +69,7 @@ export default function Home() {
 
           <section className="grid grid-cols-1 gap-[16px] md:grid-cols-2 md:gap-[32px]">
             {contents.map((item) => (
-              <article
-                key={item.title}
-                className="card px-[16px] py-[32px]"
-              >
+              <article key={item.title} className="card px-[16px] py-[32px]">
                 <h2>{item.title}</h2>
                 <Markdown>{item.body}</Markdown>
               </article>
@@ -88,10 +85,7 @@ export default function Home() {
           <nav>
             <ul className="grid grid-cols-1 gap-[16px] md:grid-cols-2 md:gap-[32px]">
               {menu.map((item) => (
-                <li
-                  key={item.title}
-                  className="linkBox hStack button"
-                >
+                <li key={item.title} className="linkBox hStack button">
                   <a
                     href={item.href}
                     rel={

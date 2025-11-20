@@ -42,10 +42,7 @@ export const teams = [
 
 export default function TeamsSection() {
   return (
-    <div
-      className="bg-white p-8 text-black"
-      id="teams"
-    >
+    <div className="bg-white p-8 text-black" id="teams">
       <h2 className="mb-8 text-2xl leading-tight font-bold tracking-normal [font-feature-settings:'palt'] md:text-3xl">
         班紹介
       </h2>
@@ -65,10 +62,7 @@ export default function TeamsSection() {
             className="relative aspect-video overflow-hidden rounded-2xl bg-black text-white"
           >
             {team.href ? (
-              <Link
-                href={team.href}
-                className="absolute inset-0"
-              >
+              <Link href={team.href} className="absolute inset-0">
                 <Image
                   src={team.image}
                   alt=""

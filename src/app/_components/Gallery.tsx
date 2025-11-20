@@ -4,6 +4,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { Video } from "@splidejs/splide-extension-video";
 import "@splidejs/splide-extension-video/dist/css/splide-extension-video.min.css";
+import Image from "next/image";
 
 const slideList = [
   {
@@ -34,20 +35,20 @@ export default function Gallery() {
         extensions={{ Video }}
       >
         {slideList.map((item) => (
-          <SplideSlide key={item.src}>
-            <img
-              src={item.src}
-              alt={item.alt}
-              className="aspect-video w-full object-cover"
-            />
+          <SplideSlide key={item.src} className="aspect-video w-full">
+            <Image fill src={item.src} alt={item.alt} />
           </SplideSlide>
         ))}
 
-        <SplideSlide data-splide-youtube="https://www.youtube.com/watch?v=nnJ5ml6D2UE">
-          <img
+        <SplideSlide
+          data-splide-youtube="https://www.youtube.com/watch?v=nnJ5ml6D2UE"
+          className="aspect-video w-full"
+        >
+          <Image
+            fill
             src="/img/pv.webp"
             alt="デジクリ紹介PV 2024 【芝浦工業大学公認サークル】"
-            className="aspect-video w-full object-cover"
+            className="object-cover"
           />
         </SplideSlide>
       </Splide>

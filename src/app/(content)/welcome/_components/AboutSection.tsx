@@ -4,10 +4,7 @@ import { MaterialSymbolsOpenInNew } from "@/components/Icon";
 
 export default function AboutSection() {
   return (
-    <div
-      className="grid md:grid-cols-[3fr_1fr]"
-      id="about-us"
-    >
+    <div className="grid md:grid-cols-[3fr_1fr]" id="about-us">
       <article className="bg-[#00b0f0] p-8 text-white">
         <h2 className="mb-8 text-2xl leading-tight font-bold tracking-normal [font-feature-settings:'palt'] md:text-3xl">
           デジクリとは？

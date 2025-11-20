@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Slider from "../_components/Slider";
 
 export const metadata: Metadata = {
@@ -12,10 +13,7 @@ export const metadata: Metadata = {
 export default function ThreeDCGPage() {
   return (
     <main className="flex-grow">
-      <section
-        id="home"
-        className="bg-sky w-full"
-      >
+      <section id="home" className="bg-sky w-full">
         <Slider
           slides={[
             {
@@ -120,16 +118,22 @@ export default function ThreeDCGPage() {
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="rounded-2xl border-2 border-black p-6">
-              <img
+              <Image
+                width={1920}
+                height={1080}
                 src="/about/img/3dcg/credit_bread.webp"
                 alt=""
+                loading="lazy"
                 className="w-full rounded-lg"
               />
             </div>
             <div className="rounded-2xl border-2 border-black p-6">
-              <img
+              <Image
+                width={820}
+                height={1560}
                 src="/about/img/3dcg/digico_preview.webp"
                 alt=""
+                loading="lazy"
                 className="w-full rounded-lg"
               />
             </div>
